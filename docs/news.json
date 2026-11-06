@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T18:20:55+00:00",
- "count": 9,
+ "generated_at": "2026-11-06T18:27:41+00:00",
+ "count": 11,
  "items": [
   {
    "title": "Tracing the spread of Celtic languages using ancient genomics",
@@ -108,6 +108,30 @@
    "snippet": "",
    "score": 6,
    "source_id": "mongabay",
+   "added": "2026-11-06"
+  },
+  {
+   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-02",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261031221153.htm",
+   "snippet": "",
+   "score": 7,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-06"
+  },
+  {
+   "title": "Ancient ape fossil in Egypt could rewrite the story of human origins",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-01",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261031011638.htm",
+   "snippet": "",
+   "score": 7,
+   "source_id": "sciencedaily_arch",
    "added": "2026-11-06"
   }
  ]

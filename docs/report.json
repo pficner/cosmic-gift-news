@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:20:55+00:00",
+ "generated_at": "2026-11-06T18:27:41+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -51,7 +51,7 @@
   },
   "guardianenv": {
    "status": "ok",
-   "items": 25
+   "items": 34
   },
   "sciencedaily_arch": {
    "status": "ok",
@@ -75,21 +75,21 @@
   }
  },
  "dropped": {
-  "no_topic_match": 325,
+  "no_topic_match": 329,
   "conflict": 27,
-  "no_solution_signal": 40,
+  "no_solution_signal": 41,
   "marketing": 12,
   "problem_without_action": 1,
   "not_an_article": 1,
   "explainer_not_news": 15,
-  "alarm": 14,
+  "alarm": 16,
   "off_topic_or_product": 7,
   "fringe": 8,
   "research_paper_not_news": 1,
-  "hemp_out_of_scope": 1,
+  "hemp_out_of_scope": 2,
   "near_duplicate": 3,
   "carried_over_candidates": 0,
-  "below_threshold": 68
+  "below_threshold": 69
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -218,12 +218,40 @@
     "concreteness": 2
    },
    "confirmed_by": []
+  },
+  {
+   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Ancient ape fossil in Egypt could rewrite the story of human origins",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 534,
-  "after_filters": 82,
+  "candidates": 543,
+  "after_filters": 83,
   "eligible": 11,
-  "chosen": 9
+  "chosen": 11
  }
 }
