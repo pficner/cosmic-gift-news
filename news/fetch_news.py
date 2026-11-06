@@ -22,7 +22,9 @@ THRESHOLD = 5            # minimum score out of 10
 HIGH = 8                 # "high weight": may exceed group limits
 BASE = 10                # normal size of the set
 MAX_TOTAL = 14           # hard ceiling when many items are high weight
-GROUP_CAPS = {"alt": 3, "tech": 2, "policy": 2, "craft": 1, "arch": 2}
+GROUP_CAPS = {"alt": 3, "tech": 2, "policy": 2, "craft": 1, "arch": 3}
+HARD_CAPS = {"arch": 3}      # never exceeded, not even when filling or for high-weight extras
+GROUP_MIN = {"arch": 7}      # archaeology/past: only the strongest items
 PER_SOURCE = 2
 REPEAT_DAYS = 30
 SAME_STORY = 0.35        # title word overlap above which two items are treated as the same story
@@ -48,6 +50,7 @@ SOLUTION = rx([r"solution", r"restor", r"reviv", r"adopt", r"agree", r"\blaws?\b
 NOISE = re.compile(r"\b(?:kalshi|polymarket|prediction markets?|gambling|betting|sportsbook)\b|\bAI (?:assistant|chatbot|agent|copilot)|\b(?:adds|launches|introduces|unveils|rolls out)\b.*\bAI\b", re.I)
 PAPER = re.compile(r"\b(?:dependent|bilayers?|phase diagrams?|spectroscop\w*|nanostructur\w*|heterostructur\w*|moir\w*)\b|\b[A-Z][a-z]?[A-Z]?[a-z]?\s?\d\b", re.I)
 HARM = re.compile(r"\b(?:pollut\w*|contaminat\w*|threat\w*|decline[sd]?|declining|extinct\w*|die-?off|losing|loss(?:es)?|poison\w*|toxic|harm\w*|collapse[sd]?|crisis)\b", re.I)
+EXPLAINER = re.compile(r"^\s*(?:what (?:is|are|does|do)|why|how (?:to|does|do)|explained|explainer|everything you need to know|q&a)\b", re.I)
 MIN_SCORE = {"ieee": 7, "ars": 7, "nature": 7, "mittr": 6}
 NONARTICLE = re.compile(r"^\s*(?:interactive|quiz|podcast|video|watch|newsletter|live|webinar|opinion|op-ed|editorial|letters?|photos?|gallery)\b\s*[:\u2013\u2014-]", re.I)
 FRINGE = rx([r"ancient aliens", r"lost civili[sz]ation", r"don.t want you to know", r"secret (?:of|history)", r"forbidden", r"suppressed", r"hidden history", r"mysterious", r"unexplained", r"anunnaki", r"atlantis"])
@@ -144,6 +147,7 @@ def exclude_reason(c):
     if re.search(r"[A-Z]{5,}.*[A-Z]{5,}", c["title"]): return "shouting"
     if NONARTICLE.search(c["title"]): return "not_an_article"
     if NOISE.search(c["title"]): return "off_topic_or_product"
+    if EXPLAINER.search(c["title"]): return "explainer_not_news"
     if c["source_id"] == "nature" and PAPER.search(c["title"]): return "research_paper_not_news"
     return None
 
@@ -228,20 +232,21 @@ def main():
     for c in pool:
         if any(same_story(toks(c["title"]), toks(u["title"])) for u in uniq): dropped("near_duplicate"); continue
         uniq.append(c)
-    elig = [c for c in uniq if c["score"] >= max(THRESHOLD, MIN_SCORE.get(c["source_id"], 0))]
+    elig = [c for c in uniq if c["score"] >= max(THRESHOLD, MIN_SCORE.get(c["source_id"], 0), GROUP_MIN.get(c["group"], 0))]
     drop["below_threshold"] = len(uniq) - len(elig)
 
     chosen, gc, sc = [], {}, {}
+    def room(c): return gc.get(c["group"], 0) < HARD_CAPS.get(c["group"], 99)
     def add(c): chosen.append(c); gc[c["group"]] = gc.get(c["group"], 0) + 1; sc[c["source_id"]] = sc.get(c["source_id"], 0) + 1
     for c in elig:                                   # pass 1: respect group caps
         if len(chosen) >= BASE: break
         if gc.get(c["group"], 0) < GROUP_CAPS[c["group"]] and sc.get(c["source_id"], 0) < PER_SOURCE: add(c)
     for c in elig:                                   # pass 2: fill to BASE ignoring group caps
         if len(chosen) >= BASE: break
-        if c not in chosen and sc.get(c["source_id"], 0) < PER_SOURCE: add(c)
+        if c not in chosen and room(c) and sc.get(c["source_id"], 0) < PER_SOURCE: add(c)
     for c in elig:                                   # pass 3: high-weight extras up to MAX_TOTAL
         if len(chosen) >= MAX_TOTAL: break
-        if c not in chosen and c["score"] >= HIGH and sc.get(c["source_id"], 0) < PER_SOURCE + 1: add(c)
+        if c not in chosen and room(c) and c["score"] >= HIGH and sc.get(c["source_id"], 0) < PER_SOURCE + 1: add(c)
 
     items = [{"title": c["title"], "source": c["source"], "tier": TIER_LABEL[c["tier"]], "group": c["group"],
               "date": c["date"].date().isoformat() if c["date"] else "", "link": c["link"],
