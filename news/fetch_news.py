@@ -20,9 +20,9 @@ NOW = dt.datetime.now(dt.timezone.utc)
 # ---- Rules (section C, E) ----
 THRESHOLD = 5            # minimum score out of 10
 HIGH = 8                 # "high weight": may exceed group limits
-BASE = 10                # normal size of the set
-MAX_TOTAL = 14           # hard ceiling when many items are high weight
-GROUP_CAPS = {"alt": 3, "tech": 2, "policy": 2, "craft": 1, "arch": 3, "contested": 1}
+BASE = 20                # normal size of the set
+MAX_TOTAL = 20           # hard ceiling when many items are high weight
+GROUP_CAPS = {"alt": 6, "tech": 4, "policy": 4, "craft": 2, "arch": 3, "contested": 1}
 HARD_CAPS = {"arch": 3, "contested": 1}      # never exceeded, not even when filling or for high-weight extras
 GROUP_MIN = {"arch": 7, "contested": 6}      # archaeology/past: only the strongest items
 PER_SOURCE = 2
