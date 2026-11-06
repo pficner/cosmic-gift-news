@@ -1,0 +1,220 @@
+{
+ "generated_at": "2026-11-06T15:38:34+00:00",
+ "sources": {
+  "mongabay": {
+   "status": "ok",
+   "items": 32
+  },
+  "carbonbrief": {
+   "status": "ok",
+   "items": 12
+  },
+  "e360": {
+   "status": "ok",
+   "items": 100
+  },
+  "positivenews": {
+   "status": "ok",
+   "items": 10
+  },
+  "rtbc": {
+   "status": "ok",
+   "items": 10
+  },
+  "grist": {
+   "status": "ok",
+   "items": 20
+  },
+  "owid": {
+   "status": "ok",
+   "items": 10
+  },
+  "unnews": {
+   "status": "failed",
+   "reason": "ParseError: not well-formed (invalid token): line 1, column 0"
+  },
+  "nature": {
+   "status": "ok",
+   "items": 75
+  },
+  "ieee": {
+   "status": "ok",
+   "items": 30
+  },
+  "mittr": {
+   "status": "ok",
+   "items": 10
+  },
+  "ars": {
+   "status": "ok",
+   "items": 20
+  },
+  "bbcsci": {
+   "status": "ok",
+   "items": 40
+  },
+  "guardianenv": {
+   "status": "ok",
+   "items": 34
+  }
+ },
+ "dropped": {
+  "no_topic_match": 263,
+  "marketing": 12,
+  "hemp_out_of_scope": 2,
+  "conflict": 17,
+  "alarm": 13,
+  "fringe": 2,
+  "near_duplicate": 2,
+  "below_threshold": 50
+ },
+ "note": "Selection is heuristic: it reads only title, summary, date and source.",
+ "chosen": [
+  {
+   "title": "Tracing the spread of Celtic languages using ancient genomics",
+   "source_id": "nature",
+   "group": "arch",
+   "score": 9,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 1,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
+   "source_id": "mongabay",
+   "group": "alt",
+   "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Global biodiversity summit ends with shortfall of funding for Africa, despite 30×30 push",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "IEEE Program Schools Preuniversity Educators On Tech Topics",
+   "source_id": "ieee",
+   "group": "alt",
+   "score": 7,
+   "parts": {
+    "evidence": 1,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Rise of Germanic and Celtic languages is written in ancient DNA",
+   "source_id": "nature",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 1,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Guarding the Gates of Knowledge",
+   "source_id": "ieee",
+   "group": "tech",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Twice as many plants and animals sold in wildlife trade as previously thought, says report",
+   "source_id": "guardianenv",
+   "group": "alt",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
+   "source_id": "carbonbrief",
+   "group": "policy",
+   "score": 6,
+   "parts": {
+    "evidence": 2,
+    "scale": 0,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+   "source_id": "mittr",
+   "group": "tech",
+   "score": 6,
+   "parts": {
+    "evidence": 2,
+    "scale": 1,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 1
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Interactive: Tracking negotiating texts at the COP31 climate summit",
+   "source_id": "carbonbrief",
+   "group": "policy",
+   "score": 6,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  }
+ ],
+ "counts": {
+  "candidates": 403,
+  "after_filters": 94,
+  "eligible": 42,
+  "chosen": 10
+ }
+}
