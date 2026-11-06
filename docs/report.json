@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T16:17:48+00:00",
+ "generated_at": "2026-11-06T16:23:55+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -57,14 +57,17 @@
  "dropped": {
   "conflict": 18,
   "no_topic_match": 293,
-  "no_solution_signal": 30,
+  "no_solution_signal": 39,
   "marketing": 12,
+  "problem_without_action": 1,
   "hemp_out_of_scope": 2,
   "not_an_article": 1,
   "alarm": 13,
+  "off_topic_or_product": 5,
   "fringe": 2,
+  "research_paper_not_news": 1,
   "near_duplicate": 2,
-  "below_threshold": 17
+  "below_threshold": 9
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -97,29 +100,15 @@
    "confirmed_by": []
   },
   {
-   "title": "Microplastics pollute nearly two-thirds of corals in Malaysia’s marine protected area, study finds",
+   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 7,
+   "score": 6,
    "parts": {
-    "evidence": 2,
-    "scale": 1,
+    "evidence": 0,
+    "scale": 2,
     "recency": 2,
     "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Twist-angle-dependent quantum phase diagrams in moiré bilayer MoTe 2",
-   "source_id": "nature",
-   "group": "tech",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 1,
     "concreteness": 2
    },
    "confirmed_by": []
@@ -137,68 +126,12 @@
     "concreteness": 2
    },
    "confirmed_by": []
-  },
-  {
-   "title": "Kalshi court losses pile up as judges refuse to block state gambling laws",
-   "source_id": "ars",
-   "group": "policy",
-   "score": 5,
-   "parts": {
-    "evidence": 2,
-    "scale": 1,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 0
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Analysis: China’s clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
-   "source_id": "carbonbrief",
-   "group": "alt",
-   "score": 5,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "IEEE Xplore Digital Library Adds AI Assistant",
-   "source_id": "ieee",
-   "group": "tech",
-   "score": 5,
-   "parts": {
-    "evidence": 0,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "From Chip Lab to Center Stage",
-   "source_id": "ieee",
-   "group": "tech",
-   "score": 5,
-   "parts": {
-    "evidence": 0,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
   }
  ],
  "counts": {
   "candidates": 403,
-  "after_filters": 32,
-  "eligible": 13,
-  "chosen": 9
+  "after_filters": 16,
+  "eligible": 5,
+  "chosen": 4
  }
 }

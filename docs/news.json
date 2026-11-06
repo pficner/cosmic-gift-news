@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T16:17:48+00:00",
- "count": 9,
+ "generated_at": "2026-11-06T16:23:55+00:00",
+ "count": 4,
  "items": [
   {
    "title": "Tracing the spread of Celtic languages using ancient genomics",
@@ -23,24 +23,14 @@
    "score": 8
   },
   {
-   "title": "Microplastics pollute nearly two-thirds of corals in Malaysia’s marine protected area, study finds",
+   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source": "Mongabay",
    "tier": "Editorial",
    "group": "policy",
-   "date": "2026-11-04",
-   "link": "https://news.mongabay.com/2026/11/microplastics-pollute-nearly-two-thirds-of-corals-in-malaysias-marine-protected-area-study-finds/",
+   "date": "2026-11-06",
+   "link": "https://news.mongabay.com/2026/11/kenya-launches-160-million-conservation-initiative-to-support-communities-and-biodiversity/",
    "snippet": "",
-   "score": 7
-  },
-  {
-   "title": "Twist-angle-dependent quantum phase diagrams in moiré bilayer MoTe 2",
-   "source": "Nature (news)",
-   "tier": "Primary",
-   "group": "tech",
-   "date": "2026-11-04",
-   "link": "https://www.nature.com/articles/s41586-026-11274-0",
-   "snippet": "",
-   "score": 7
+   "score": 6
   },
   {
    "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
@@ -51,46 +41,6 @@
    "link": "https://www.carbonbrief.org/analysis-chinas-quarterly-co2-falls-3-in-largest-drop-since-covid",
    "snippet": "",
    "score": 6
-  },
-  {
-   "title": "Kalshi court losses pile up as judges refuse to block state gambling laws",
-   "source": "Ars Technica",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-05",
-   "link": "https://arstechnica.com/tech-policy/2026/11/kalshi-court-losses-pile-up-as-judges-refuse-to-block-state-gambling-laws/",
-   "snippet": "",
-   "score": 5
-  },
-  {
-   "title": "Analysis: China’s clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
-   "source": "Carbon Brief",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-10-29",
-   "link": "https://www.carbonbrief.org/analysis-chinas-clean-tech-exports-in-2026-to-avoid-as-much-co2-as-brazil-emits-in-a-year",
-   "snippet": "",
-   "score": 5
-  },
-  {
-   "title": "IEEE Xplore Digital Library Adds AI Assistant",
-   "source": "IEEE Spectrum",
-   "tier": "Editorial",
-   "group": "tech",
-   "date": "2026-10-26",
-   "link": "https://spectrum.ieee.org/ieee-xplore-digital-library-ai",
-   "snippet": "",
-   "score": 5
-  },
-  {
-   "title": "From Chip Lab to Center Stage",
-   "source": "IEEE Spectrum",
-   "tier": "Editorial",
-   "group": "tech",
-   "date": "2026-10-23",
-   "link": "https://spectrum.ieee.org/preethi-ashwath-chip-designer",
-   "snippet": "",
-   "score": 5
   }
  ]
 }
