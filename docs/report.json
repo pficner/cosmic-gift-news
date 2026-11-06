@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:02:32+00:00",
+ "generated_at": "2026-11-06T18:16:43+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -75,7 +75,7 @@
   }
  },
  "dropped": {
-  "no_topic_match": 330,
+  "no_topic_match": 329,
   "conflict": 27,
   "no_solution_signal": 41,
   "marketing": 12,
@@ -83,11 +83,12 @@
   "not_an_article": 1,
   "explainer_not_news": 15,
   "alarm": 16,
-  "off_topic_or_product": 6,
+  "off_topic_or_product": 7,
   "fringe": 8,
   "research_paper_not_news": 1,
   "hemp_out_of_scope": 2,
   "near_duplicate": 3,
+  "carried_over_candidates": 0,
   "below_threshold": 69
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
