@@ -22,12 +22,15 @@ THRESHOLD = 5            # minimum score out of 10
 HIGH = 8                 # "high weight": may exceed group limits
 BASE = 10                # normal size of the set
 MAX_TOTAL = 14           # hard ceiling when many items are high weight
-GROUP_CAPS = {"alt": 3, "tech": 2, "policy": 2, "craft": 1, "arch": 3}
-HARD_CAPS = {"arch": 3}      # never exceeded, not even when filling or for high-weight extras
-GROUP_MIN = {"arch": 7}      # archaeology/past: only the strongest items
+GROUP_CAPS = {"alt": 3, "tech": 2, "policy": 2, "craft": 1, "arch": 3, "contested": 1}
+HARD_CAPS = {"arch": 3, "contested": 1}      # never exceeded, not even when filling or for high-weight extras
+GROUP_MIN = {"arch": 7, "contested": 6}      # archaeology/past: only the strongest items
 PER_SOURCE = 2
 REPEAT_DAYS = 30
 SAME_STORY = 0.35        # title word overlap above which two items are treated as the same story
+MIN_AGE_HOURS = 40       # normal runs rebuild only when the last list is older than this (about every 2 days)
+CARRY_DAYS = 14          # a good item stays on the list at most this many days after it was added
+DECAY_DAYS = 4           # carried items lose 1 point per this many days, so fresh items win over time
 FORCE = os.environ.get("FORCE") == "1"   # manual re-run: rebuild today's set
 TIER_LABEL = {1: "Primary", 2: "Editorial", 3: "Specialist"}
 
@@ -53,7 +56,8 @@ HARM = re.compile(r"\b(?:pollut\w*|contaminat\w*|threat\w*|decline[sd]?|declinin
 EXPLAINER = re.compile(r"^\s*(?:what (?:is|are|does|do)|why|how (?:to|does|do)|explained|explainer|everything you need to know|q&a)\b", re.I)
 MIN_SCORE = {"ieee": 7, "ars": 7, "nature": 7, "mittr": 6}
 NONARTICLE = re.compile(r"^\s*(?:interactive|quiz|podcast|video|watch|newsletter|live|webinar|opinion|op-ed|editorial|letters?|photos?|gallery)\b\s*[:\u2013\u2014-]", re.I)
-FRINGE = rx([r"ancient aliens", r"lost civili[sz]ation", r"don.t want you to know", r"secret (?:of|history)", r"forbidden", r"suppressed", r"hidden history", r"mysterious", r"unexplained", r"anunnaki", r"atlantis"])
+FRINGE = rx([r"don.t want you to know", r"secret (?:of|history)", r"forbidden", r"suppressed", r"hidden history", r"mysterious", r"unexplained"])   # clickbait wording: always excluded
+CONTESTED = rx([r"ancient aliens", r"lost civili[sz]ation", r"anunnaki", r"atlantis", r"younger dryas", r"pre-?(?:ice age|flood) civili", r"advanced (?:ancient|prehistoric) civili"])   # debated ideas: shown only from editorial or primary sources, labelled, max 1
 
 EVID_STRONG = rx([r"peer-?reviewed", r"published in", r"\bstud(?:y|ies)\b", r"researchers", r"scientists", r"\bjournal\b", r"\breport\b", r"\bdata\b", r"analysis", r"survey", r"court", r"directive", r"regulation", r"agreement", r"radiocarbon", r"dating", r"excavation", r"\blaw\b"])
 EVID_MED = rx([r"expert", r"according to", r"\bsaid\b", r"interview", r"officials", r"announced"])
@@ -143,6 +147,7 @@ def exclude_reason(c):
     if MARKET.search(text): return "marketing"
     if SUPER.search(c["title"]): return "superlative"
     if FRINGE.search(text): return "fringe"
+    if CONTESTED.search(text) and c["tier"] > 2: return "fringe"
     if HEMP_OUT.search(text) and not HEMP_OK.search(text): return "hemp_out_of_scope"
     if re.search(r"[A-Z]{5,}.*[A-Z]{5,}", c["title"]): return "shouting"
     if NONARTICLE.search(c["title"]): return "not_an_article"
@@ -181,8 +186,10 @@ def main():
     srcs = json.load(open(SOURCES))["sources"]
     if os.path.exists(OUT) and not FORCE:
         try:
-            if json.load(open(OUT)).get("generated_at", "")[:10] == NOW.date().isoformat():
-                log("news.json was already built today; leaving it as is (set FORCE=1 to rebuild)"); return
+            g0 = json.load(open(OUT)).get("generated_at", "")
+            age_h = (NOW - dt.datetime.fromisoformat(g0)).total_seconds() / 3600 if g0 else 999
+            if age_h < MIN_AGE_HOURS:
+                log("news.json is only %.0f h old; leaving it as is (rebuilds after %d h, or set FORCE=1)" % (age_h, MIN_AGE_HOURS)); return
         except Exception: pass
     report = {"generated_at": NOW.isoformat(timespec="seconds"), "sources": {}, "dropped": {}, "note": "Selection is heuristic: it reads only title, summary, date and source."}
     drop = report["dropped"]
@@ -218,10 +225,10 @@ def main():
         if c["link"] in hist: dropped("repeated"); continue
         r = exclude_reason(c)
         if r: dropped(r); continue
-        g = classify(c)
+        g = "contested" if CONTESTED.search(c["title"] + " " + c["summary"]) else classify(c)
         if not g: dropped("no_topic_match"); continue
-        if g != "arch" and not SOLUTION.search(c["title"]): dropped("no_solution_signal"); continue
-        if g != "arch" and HARM.search(c["title"]) and not re.search(r"\b(?:reduc\w*|restor\w*|fund\w*|ban\w*|recover\w*|revers\w*|fall|falls|cut|cuts)\b", c["title"], re.I): dropped("problem_without_action"); continue
+        if g not in ("arch", "contested") and not SOLUTION.search(c["title"]): dropped("no_solution_signal"); continue
+        if g not in ("arch", "contested") and HARM.search(c["title"]) and not re.search(r"\b(?:reduc\w*|restor\w*|fund\w*|ban\w*|recover\w*|revers\w*|fall|falls|cut|cuts)\b", c["title"], re.I): dropped("problem_without_action"); continue
         c["group"] = g
         pool.append(c)
     for c in pool:
@@ -232,8 +239,29 @@ def main():
     for c in pool:
         if any(same_story(toks(c["title"]), toks(u["title"])) for u in uniq): dropped("near_duplicate"); continue
         uniq.append(c)
-    elig = [c for c in uniq if c["score"] >= max(THRESHOLD, MIN_SCORE.get(c["source_id"], 0), GROUP_MIN.get(c["group"], 0))]
-    drop["below_threshold"] = len(uniq) - len(elig)
+    # carry-over: good items from the previous list stay unless better new ones push them out
+    carried = []
+    try: prev = json.load(open(OUT)).get("items", [])
+    except Exception: prev = []
+    name2id = {s["name"]: s["id"] for s in srcs}; lab2tier = {v: k for k, v in TIER_LABEL.items()}
+    new_links = {c["link"] for c in uniq}
+    for p in prev:
+        try:
+            added = dt.date.fromisoformat(p.get("added") or p.get("date") or today)
+            age = (NOW.date() - added).days
+            if age > CARRY_DAYS or p["link"] in new_links or not p["link"].startswith("http"): continue
+            sid = p.get("source_id") or name2id.get(p["source"], p["source"])
+            base = int(p["score"]); eff = base - age // DECAY_DAYS
+            carried.append({"title": p["title"], "source": p["source"], "source_id": sid, "tier": lab2tier.get(p["tier"], 3), "group": p["group"],
+                            "date": dt.datetime.fromisoformat(p["date"]).replace(tzinfo=dt.timezone.utc) if p.get("date") else None, "link": p["link"],
+                            "summary": "", "cats": "", "snippet_allowed": False, "score": eff, "base_score": base, "added": added.isoformat(), "carried": True,
+                            "parts": {}, "confirmed_by": []})
+        except Exception: continue
+    for c in uniq: c.setdefault("base_score", c["score"]); c.setdefault("added", today)
+    drop["carried_over_candidates"] = len(carried)
+    elig = [c for c in uniq + [k for k in carried if not any(same_story(toks(k["title"]), toks(u["title"])) for u in uniq)] if c["score"] >= max(THRESHOLD, MIN_SCORE.get(c["source_id"], 0), GROUP_MIN.get(c["group"], 0))]
+    elig.sort(key=lambda c: (-c["score"], -(c["date"].timestamp() if c["date"] else 0)))
+    drop["below_threshold"] = max(0, len(uniq) + len(carried) - len(elig))
 
     chosen, gc, sc = [], {}, {}
     def room(c): return gc.get(c["group"], 0) < HARD_CAPS.get(c["group"], 99)
@@ -250,7 +278,7 @@ def main():
 
     items = [{"title": c["title"], "source": c["source"], "tier": TIER_LABEL[c["tier"]], "group": c["group"],
               "date": c["date"].date().isoformat() if c["date"] else "", "link": c["link"],
-              "snippet": snippet(c, c["snippet_allowed"]), "score": c["score"]} for c in chosen]
+              "snippet": snippet(c, c["snippet_allowed"]), "score": c["base_score"], "source_id": c["source_id"], "added": c["added"]} for c in chosen]
     report["chosen"] = [{"title": c["title"], "source_id": c["source_id"], "group": c["group"], "score": c["score"], "parts": c["parts"], "confirmed_by": c["confirmed_by"]} for c in chosen]
     report["counts"] = {"candidates": len(cands), "after_filters": len(pool), "eligible": len(elig), "chosen": len(chosen)}
     json.dump(report, open(REPORT, "w"), indent=1, ensure_ascii=False)
