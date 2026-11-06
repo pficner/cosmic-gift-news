@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T18:16:43+00:00",
- "count": 6,
+ "generated_at": "2026-11-06T18:20:55+00:00",
+ "count": 9,
  "items": [
   {
    "title": "Tracing the spread of Celtic languages using ancient genomics",
@@ -51,6 +51,30 @@
    "added": "2026-11-06"
   },
   {
+   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-03",
+   "link": "https://phys.org/news/2026-11-marginalia-millions-arabic-manuscripts-reshape.html",
+   "snippet": "",
+   "score": 7,
+   "source_id": "physorg_arch",
+   "added": "2026-11-06"
+  },
+  {
+   "title": "Cold without consequences? Short-term climate fluctuations appear to have had less impact on early farmers",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-03",
+   "link": "https://phys.org/news/2026-11-cold-consequences-short-term-climate.html",
+   "snippet": "",
+   "score": 7,
+   "source_id": "physorg_arch",
+   "added": "2026-11-06"
+  },
+  {
    "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source": "Mongabay",
    "tier": "Editorial",
@@ -72,6 +96,18 @@
    "snippet": "",
    "score": 6,
    "source_id": "carbonbrief",
+   "added": "2026-11-06"
+  },
+  {
+   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-03",
+   "link": "https://news.mongabay.com/2026/11/high-expectations-but-no-agreement-on-antarctic-marine-protection-krill-fishing/",
+   "snippet": "",
+   "score": 6,
+   "source_id": "mongabay",
    "added": "2026-11-06"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:16:43+00:00",
+ "generated_at": "2026-11-06T18:20:55+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -51,7 +51,7 @@
   },
   "guardianenv": {
    "status": "ok",
-   "items": 34
+   "items": 25
   },
   "sciencedaily_arch": {
    "status": "ok",
@@ -75,21 +75,21 @@
   }
  },
  "dropped": {
-  "no_topic_match": 329,
+  "no_topic_match": 325,
   "conflict": 27,
-  "no_solution_signal": 41,
+  "no_solution_signal": 40,
   "marketing": 12,
   "problem_without_action": 1,
   "not_an_article": 1,
   "explainer_not_news": 15,
-  "alarm": 16,
+  "alarm": 14,
   "off_topic_or_product": 7,
   "fringe": 8,
   "research_paper_not_news": 1,
-  "hemp_out_of_scope": 2,
+  "hemp_out_of_scope": 1,
   "near_duplicate": 3,
   "carried_over_candidates": 0,
-  "below_threshold": 69
+  "below_threshold": 68
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -150,6 +150,34 @@
    "confirmed_by": []
   },
   {
+   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 1
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Cold without consequences? Short-term climate fluctuations appear to have had less impact on early farmers",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 1
+   },
+   "confirmed_by": []
+  },
+  {
    "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source_id": "mongabay",
    "group": "policy",
@@ -176,12 +204,26 @@
     "concreteness": 2
    },
    "confirmed_by": []
+  },
+  {
+   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 6,
+   "parts": {
+    "evidence": 2,
+    "scale": 0,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 543,
-  "after_filters": 83,
+  "candidates": 534,
+  "after_filters": 82,
   "eligible": 11,
-  "chosen": 6
+  "chosen": 9
  }
 }
