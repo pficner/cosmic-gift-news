@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T17:53:04+00:00",
+ "generated_at": "2026-11-06T18:02:32+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -75,19 +75,20 @@
   }
  },
  "dropped": {
-  "no_topic_match": 342,
+  "no_topic_match": 330,
   "conflict": 27,
   "no_solution_signal": 41,
   "marketing": 12,
   "problem_without_action": 1,
   "not_an_article": 1,
+  "explainer_not_news": 15,
   "alarm": 16,
   "off_topic_or_product": 6,
   "fringe": 8,
   "research_paper_not_news": 1,
   "hemp_out_of_scope": 2,
-  "near_duplicate": 4,
-  "below_threshold": 48
+  "near_duplicate": 3,
+  "below_threshold": 69
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -134,13 +135,13 @@
    "confirmed_by": []
   },
   {
-   "title": "What is the Paris Agreement and why does 1.5C matter?",
-   "source_id": "bbcsci",
-   "group": "policy",
-   "score": 6,
+   "title": "Centuries-old cemetery helps scientists link climate shocks to Industrial Revolution disease",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 7,
    "parts": {
-    "evidence": 0,
-    "scale": 2,
+    "evidence": 2,
+    "scale": 1,
     "recency": 2,
     "confirmation": 0,
     "concreteness": 2
@@ -174,68 +175,12 @@
     "concreteness": 2
    },
    "confirmed_by": []
-  },
-  {
-   "title": "Centuries-old cemetery helps scientists link climate shocks to Industrial Revolution disease",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 1,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 1
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Shrine Maiden Figurine Unearthed in 1,500-Year-Old Japanese Burial",
-   "source_id": "archaeology_mag",
-   "group": "arch",
-   "score": 6,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
   }
  ],
  "counts": {
   "candidates": 543,
-  "after_filters": 86,
-  "eligible": 34,
-  "chosen": 10
+  "after_filters": 83,
+  "eligible": 11,
+  "chosen": 6
  }
 }
