@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T16:23:55+00:00",
- "count": 4,
+ "generated_at": "2026-11-06T17:53:04+00:00",
+ "count": 10,
  "items": [
   {
    "title": "Tracing the spread of Celtic languages using ancient genomics",
@@ -13,6 +13,16 @@
    "score": 9
   },
   {
+   "title": "Scientists just found dinosaur blood that survived 115 million years",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-06",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261105224542.htm",
+   "snippet": "",
+   "score": 8
+  },
+  {
    "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
    "source": "Mongabay",
    "tier": "Editorial",
@@ -21,6 +31,16 @@
    "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
    "snippet": "",
    "score": 8
+  },
+  {
+   "title": "What is the Paris Agreement and why does 1.5C matter?",
+   "source": "BBC Science & Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-06",
+   "link": "https://www.bbc.co.uk/news/articles/c93d59d4zy1o?at_medium=RSS&at_campaign=rss",
+   "snippet": "",
+   "score": 6
   },
   {
    "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
@@ -39,6 +59,46 @@
    "group": "alt",
    "date": "2026-11-06",
    "link": "https://www.carbonbrief.org/analysis-chinas-quarterly-co2-falls-3-in-largest-drop-since-covid",
+   "snippet": "",
+   "score": 6
+  },
+  {
+   "title": "Centuries-old cemetery helps scientists link climate shocks to Industrial Revolution disease",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-05",
+   "link": "https://phys.org/news/2026-11-centuries-cemetery-scientists-link-climate.html",
+   "snippet": "",
+   "score": 7
+  },
+  {
+   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-03",
+   "link": "https://phys.org/news/2026-11-marginalia-millions-arabic-manuscripts-reshape.html",
+   "snippet": "",
+   "score": 7
+  },
+  {
+   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-02",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261031221153.htm",
+   "snippet": "",
+   "score": 7
+  },
+  {
+   "title": "Shrine Maiden Figurine Unearthed in 1,500-Year-Old Japanese Burial",
+   "source": "Archaeology Magazine (AIA)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-03",
+   "link": "https://archaeology.org/news/2026/11/03/shrine-maiden-figurine-unearthed-in-1500-year-old-japanese-burial/",
    "snippet": "",
    "score": 6
   }
