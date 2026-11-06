@@ -45,6 +45,10 @@ SUPER = rx([r"revolutionary", r"game-?changing", r"miracle", r"breakthrough", r"
 HEMP_OUT = rx([r"\bcbd\b", r"cannabis", r"marijuana", r"\bweed\b", r"\bthc\b", r"dispensar", r"recreational", r"legali[sz]", r"psychedelic"])
 HEMP_OK = rx([r"industrial hemp", r"hempcrete", r"hemp (?:fib|fab|build|insul|plastic|concrete|textile|crop|seed|construction|material)"])
 SOLUTION = rx([r"solution", r"restor", r"reviv", r"adopt", r"agree", r"\blaws?\b", r"\bbans?\b", r"launch", r"improv", r"reduc", r"\bcuts?\b", r"\bfalls?\b", r"drops?\b", r"cleaner", r"clean energy", r"renewable", r"recycl", r"sustainab", r"protect", r"funding", r"pathway", r"roadmap", r"deploy", r"invest", r"approv", r"licen[cs]", r"certif", r"rewild", r"regenerat", r"efficien", r"low-carbon", r"lower carbon", r"carbon (?:storage|capture|neutral)", r"insulat", r"substitut", r"alternative", r"replac", r"innovat", r"new (?:method|material|technique|technology)", r"cooperat", r"collaborat", r"treaty", r"commit", r"expand", r"scal(?:e|ing) up", r"progress"])
+NOISE = re.compile(r"\b(?:kalshi|polymarket|prediction markets?|gambling|betting|sportsbook)\b|\bAI (?:assistant|chatbot|agent|copilot)|\b(?:adds|launches|introduces|unveils|rolls out)\b.*\bAI\b", re.I)
+PAPER = re.compile(r"\b(?:dependent|bilayers?|phase diagrams?|spectroscop\w*|nanostructur\w*|heterostructur\w*|moir\w*)\b|\b[A-Z][a-z]?[A-Z]?[a-z]?\s?\d\b", re.I)
+HARM = re.compile(r"\b(?:pollut\w*|contaminat\w*|threat\w*|decline[sd]?|declining|extinct\w*|die-?off|losing|loss(?:es)?|poison\w*|toxic|harm\w*|collapse[sd]?|crisis)\b", re.I)
+MIN_SCORE = {"ieee": 7, "ars": 7, "nature": 7, "mittr": 6}
 NONARTICLE = re.compile(r"^\s*(?:interactive|quiz|podcast|video|watch|newsletter|live|webinar|opinion|op-ed|editorial|letters?|photos?|gallery)\b\s*[:\u2013\u2014-]", re.I)
 FRINGE = rx([r"ancient aliens", r"lost civili[sz]ation", r"don.t want you to know", r"secret (?:of|history)", r"forbidden", r"suppressed", r"hidden history", r"mysterious", r"unexplained", r"anunnaki", r"atlantis"])
 
@@ -139,6 +143,8 @@ def exclude_reason(c):
     if HEMP_OUT.search(text) and not HEMP_OK.search(text): return "hemp_out_of_scope"
     if re.search(r"[A-Z]{5,}.*[A-Z]{5,}", c["title"]): return "shouting"
     if NONARTICLE.search(c["title"]): return "not_an_article"
+    if NOISE.search(c["title"]): return "off_topic_or_product"
+    if c["source_id"] == "nature" and PAPER.search(c["title"]): return "research_paper_not_news"
     return None
 
 def score(c, all_c):
@@ -210,7 +216,8 @@ def main():
         if r: dropped(r); continue
         g = classify(c)
         if not g: dropped("no_topic_match"); continue
-        if g != "arch" and not SOLUTION.search(c["title"] + " " + c["summary"]): dropped("no_solution_signal"); continue
+        if g != "arch" and not SOLUTION.search(c["title"]): dropped("no_solution_signal"); continue
+        if g != "arch" and HARM.search(c["title"]) and not re.search(r"\b(?:reduc\w*|restor\w*|fund\w*|ban\w*|recover\w*|revers\w*|fall|falls|cut|cuts)\b", c["title"], re.I): dropped("problem_without_action"); continue
         c["group"] = g
         pool.append(c)
     for c in pool:
@@ -221,7 +228,7 @@ def main():
     for c in pool:
         if any(same_story(toks(c["title"]), toks(u["title"])) for u in uniq): dropped("near_duplicate"); continue
         uniq.append(c)
-    elig = [c for c in uniq if c["score"] >= THRESHOLD]
+    elig = [c for c in uniq if c["score"] >= max(THRESHOLD, MIN_SCORE.get(c["source_id"], 0))]
     drop["below_threshold"] = len(uniq) - len(elig)
 
     chosen, gc, sc = [], {}, {}
