@@ -1,5 +1,5 @@
 {
-  "_note": "Candidate sources. 'tier' is a PROPOSAL and no source has passed checklist A yet. 'snippet_allowed' stays false until the source's reuse terms are confirmed. Only Mongabay was seen answering in a browser (6 Nov 2026); every other address was written from memory and is unverified. UN News removed: answers in a browser but not from GitHub's servers, and its feed is mostly conflict reporting.",
+  "_note": "Candidate sources. 'tier' is a PROPOSAL and no source has passed checklist A yet. 'snippet_allowed' stays false until the source's reuse terms are confirmed. Only Mongabay was seen answering in a browser (6 Nov 2026); every other address was written from memory and is unverified. UN News removed: answers in a browser but not from GitHub's servers, and its feed is mostly conflict reporting. Added 6 Nov 2026 (archaeology): ScienceDaily, Phys.org, Smithsonian; addresses taken from search results, not yet confirmed to answer from GitHub (the workflow report shows it). ScienceDaily and Phys.org repost university press releases: tier 3, read as institutional text, not independent reporting. No verified feed yet for hemp/natural building or wrecks. 6 Nov 2026: Archaeology Magazine and Anthropocene Magazine feeds opened in a browser and parsed as valid RSS with fresh items. Not added: NOAA Ocean Exploration (rss.xml returns 404), SPAB (feed opens but newest item is from 2023), Schmidt Ocean Institute (valid feed, but almost no wreck content), Nauka w Polsce (valid feed at /historia/rss.xml, Polish titles; needs Polish keyword rules and terms ask for a monthly e-mail notice for reprints).",
   "sources": [
     {
       "id": "mongabay",
@@ -89,6 +89,41 @@
       "id": "guardianenv",
       "name": "Guardian Environment",
       "url": "https://www.theguardian.com/environment/rss",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "sciencedaily_arch",
+      "name": "ScienceDaily (archaeology)",
+      "url": "https://www.sciencedaily.com/rss/fossils_ruins/archaeology.xml",
+      "tier": 3,
+      "snippet_allowed": false
+    },
+    {
+      "id": "physorg_arch",
+      "name": "Phys.org (archaeology & fossils)",
+      "url": "https://phys.org/rss-feed/science-news/archaeology-fossils/",
+      "tier": 3,
+      "snippet_allowed": false
+    },
+    {
+      "id": "smithsonian",
+      "name": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/rss/latest_articles/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "archaeology_mag",
+      "name": "Archaeology Magazine (AIA)",
+      "url": "https://archaeology.org/feed/",
+      "tier": 3,
+      "snippet_allowed": false
+    },
+    {
+      "id": "anthropocene",
+      "name": "Anthropocene Magazine",
+      "url": "https://www.anthropocenemagazine.org/feed/",
       "tier": 2,
       "snippet_allowed": false
     }
