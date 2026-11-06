@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T15:38:34+00:00",
+ "generated_at": "2026-11-06T16:17:48+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -29,10 +29,6 @@
    "status": "ok",
    "items": 10
   },
-  "unnews": {
-   "status": "failed",
-   "reason": "ParseError: not well-formed (invalid token): line 1, column 0"
-  },
   "nature": {
    "status": "ok",
    "items": 75
@@ -59,14 +55,16 @@
   }
  },
  "dropped": {
-  "no_topic_match": 263,
+  "conflict": 18,
+  "no_topic_match": 293,
+  "no_solution_signal": 30,
   "marketing": 12,
   "hemp_out_of_scope": 2,
-  "conflict": 17,
+  "not_an_article": 1,
   "alarm": 13,
   "fringe": 2,
   "near_duplicate": 2,
-  "below_threshold": 50
+  "below_threshold": 17
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -99,13 +97,13 @@
    "confirmed_by": []
   },
   {
-   "title": "Global biodiversity summit ends with shortfall of funding for Africa, despite 30×30 push",
+   "title": "Microplastics pollute nearly two-thirds of corals in Malaysia’s marine protected area, study finds",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 8,
+   "score": 7,
    "parts": {
     "evidence": 2,
-    "scale": 2,
+    "scale": 1,
     "recency": 2,
     "confirmation": 0,
     "concreteness": 2
@@ -113,27 +111,13 @@
    "confirmed_by": []
   },
   {
-   "title": "IEEE Program Schools Preuniversity Educators On Tech Topics",
-   "source_id": "ieee",
-   "group": "alt",
-   "score": 7,
-   "parts": {
-    "evidence": 1,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Rise of Germanic and Celtic languages is written in ancient DNA",
+   "title": "Twist-angle-dependent quantum phase diagrams in moiré bilayer MoTe 2",
    "source_id": "nature",
-   "group": "arch",
+   "group": "tech",
    "score": 7,
    "parts": {
-    "evidence": 0,
-    "scale": 2,
+    "evidence": 2,
+    "scale": 0,
     "recency": 2,
     "confirmation": 1,
     "concreteness": 2
@@ -141,37 +125,9 @@
    "confirmed_by": []
   },
   {
-   "title": "Guarding the Gates of Knowledge",
-   "source_id": "ieee",
-   "group": "tech",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Twice as many plants and animals sold in wildlife trade as previously thought, says report",
-   "source_id": "guardianenv",
-   "group": "alt",
-   "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
    "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
    "source_id": "carbonbrief",
-   "group": "policy",
+   "group": "alt",
    "score": 6,
    "parts": {
     "evidence": 2,
@@ -183,28 +139,56 @@
    "confirmed_by": []
   },
   {
-   "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-   "source_id": "mittr",
-   "group": "tech",
-   "score": 6,
+   "title": "Kalshi court losses pile up as judges refuse to block state gambling laws",
+   "source_id": "ars",
+   "group": "policy",
+   "score": 5,
    "parts": {
     "evidence": 2,
     "scale": 1,
     "recency": 2,
     "confirmation": 0,
-    "concreteness": 1
+    "concreteness": 0
    },
    "confirmed_by": []
   },
   {
-   "title": "Interactive: Tracking negotiating texts at the COP31 climate summit",
+   "title": "Analysis: China’s clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
    "source_id": "carbonbrief",
-   "group": "policy",
-   "score": 6,
+   "group": "alt",
+   "score": 5,
+   "parts": {
+    "evidence": 2,
+    "scale": 0,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "IEEE Xplore Digital Library Adds AI Assistant",
+   "source_id": "ieee",
+   "group": "tech",
+   "score": 5,
    "parts": {
     "evidence": 0,
     "scale": 2,
-    "recency": 2,
+    "recency": 1,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "From Chip Lab to Center Stage",
+   "source_id": "ieee",
+   "group": "tech",
+   "score": 5,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 1,
     "confirmation": 0,
     "concreteness": 2
    },
@@ -213,8 +197,8 @@
  ],
  "counts": {
   "candidates": 403,
-  "after_filters": 94,
-  "eligible": 42,
-  "chosen": 10
+  "after_filters": 32,
+  "eligible": 13,
+  "chosen": 9
  }
 }

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T15:38:34+00:00",
- "count": 10,
+ "generated_at": "2026-11-06T16:17:48+00:00",
+ "count": 9,
  "items": [
   {
    "title": "Tracing the spread of Celtic languages using ancient genomics",
@@ -23,52 +23,22 @@
    "score": 8
   },
   {
-   "title": "Global biodiversity summit ends with shortfall of funding for Africa, despite 30×30 push",
+   "title": "Microplastics pollute nearly two-thirds of corals in Malaysia’s marine protected area, study finds",
    "source": "Mongabay",
    "tier": "Editorial",
    "group": "policy",
-   "date": "2026-11-03",
-   "link": "https://news.mongabay.com/short-article/2026/11/global-biodiversity-summit-ends-with-shortfall-of-funding-for-africa-despite-30x30-push/",
-   "snippet": "",
-   "score": 8
-  },
-  {
-   "title": "IEEE Program Schools Preuniversity Educators On Tech Topics",
-   "source": "IEEE Spectrum",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-05",
-   "link": "https://spectrum.ieee.org/ieee-preuniversity",
+   "date": "2026-11-04",
+   "link": "https://news.mongabay.com/2026/11/microplastics-pollute-nearly-two-thirds-of-corals-in-malaysias-marine-protected-area-study-finds/",
    "snippet": "",
    "score": 7
   },
   {
-   "title": "Rise of Germanic and Celtic languages is written in ancient DNA",
+   "title": "Twist-angle-dependent quantum phase diagrams in moiré bilayer MoTe 2",
    "source": "Nature (news)",
    "tier": "Primary",
-   "group": "arch",
-   "date": "2026-11-04",
-   "link": "https://www.nature.com/articles/d41586-026-03581-3",
-   "snippet": "",
-   "score": 7
-  },
-  {
-   "title": "Guarding the Gates of Knowledge",
-   "source": "IEEE Spectrum",
-   "tier": "Editorial",
    "group": "tech",
-   "date": "2026-11-01",
-   "link": "https://spectrum.ieee.org/ai-slop-trust-science",
-   "snippet": "",
-   "score": 7
-  },
-  {
-   "title": "Twice as many plants and animals sold in wildlife trade as previously thought, says report",
-   "source": "Guardian Environment",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-10-30",
-   "link": "https://www.theguardian.com/environment/2026/oct/30/twice-as-many-plants-and-animals-sold-in-wildlife-trade-as-previously-thought-says-report",
+   "date": "2026-11-04",
+   "link": "https://www.nature.com/articles/s41586-026-11274-0",
    "snippet": "",
    "score": 7
   },
@@ -76,31 +46,51 @@
    "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
    "source": "Carbon Brief",
    "tier": "Editorial",
-   "group": "policy",
+   "group": "alt",
    "date": "2026-11-06",
    "link": "https://www.carbonbrief.org/analysis-chinas-quarterly-co2-falls-3-in-largest-drop-since-covid",
    "snippet": "",
    "score": 6
   },
   {
-   "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-   "source": "MIT Technology Review",
-   "tier": "Editorial",
-   "group": "tech",
-   "date": "2026-11-04",
-   "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-   "snippet": "",
-   "score": 6
-  },
-  {
-   "title": "Interactive: Tracking negotiating texts at the COP31 climate summit",
-   "source": "Carbon Brief",
+   "title": "Kalshi court losses pile up as judges refuse to block state gambling laws",
+   "source": "Ars Technica",
    "tier": "Editorial",
    "group": "policy",
    "date": "2026-11-05",
-   "link": "https://www.carbonbrief.org/interactive-tracking-negotiating-texts-at-the-cop31-climate-summit",
+   "link": "https://arstechnica.com/tech-policy/2026/11/kalshi-court-losses-pile-up-as-judges-refuse-to-block-state-gambling-laws/",
    "snippet": "",
-   "score": 6
+   "score": 5
+  },
+  {
+   "title": "Analysis: China’s clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
+   "source": "Carbon Brief",
+   "tier": "Editorial",
+   "group": "alt",
+   "date": "2026-10-29",
+   "link": "https://www.carbonbrief.org/analysis-chinas-clean-tech-exports-in-2026-to-avoid-as-much-co2-as-brazil-emits-in-a-year",
+   "snippet": "",
+   "score": 5
+  },
+  {
+   "title": "IEEE Xplore Digital Library Adds AI Assistant",
+   "source": "IEEE Spectrum",
+   "tier": "Editorial",
+   "group": "tech",
+   "date": "2026-10-26",
+   "link": "https://spectrum.ieee.org/ieee-xplore-digital-library-ai",
+   "snippet": "",
+   "score": 5
+  },
+  {
+   "title": "From Chip Lab to Center Stage",
+   "source": "IEEE Spectrum",
+   "tier": "Editorial",
+   "group": "tech",
+   "date": "2026-10-23",
+   "link": "https://spectrum.ieee.org/preethi-ashwath-chip-designer",
+   "snippet": "",
+   "score": 5
   }
  ]
 }
