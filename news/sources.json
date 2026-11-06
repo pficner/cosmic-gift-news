@@ -1,19 +1,96 @@
 {
-  "_note": "Candidate sources. 'tier' is a PROPOSAL and no source has passed checklist A yet. 'snippet_allowed' stays false until the source's reuse terms are confirmed. Only Mongabay was seen answering in a browser (6 Nov 2026); every other address was written from memory and is unverified.",
+  "_note": "Candidate sources. 'tier' is a PROPOSAL and no source has passed checklist A yet. 'snippet_allowed' stays false until the source's reuse terms are confirmed. Only Mongabay was seen answering in a browser (6 Nov 2026); every other address was written from memory and is unverified. UN News removed: answers in a browser but not from GitHub's servers, and its feed is mostly conflict reporting.",
   "sources": [
-    {"id": "mongabay",  "name": "Mongabay",  "url": "https://news.mongabay.com/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "carbonbrief", "name": "Carbon Brief", "url": "https://www.carbonbrief.org/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "e360", "name": "Yale Environment 360", "url": "https://e360.yale.edu/feed.xml", "tier": 2, "snippet_allowed": false},
-    {"id": "positivenews", "name": "Positive News", "url": "https://www.positive.news/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "rtbc", "name": "Reasons to be Cheerful", "url": "https://reasonstobecheerful.world/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "grist", "name": "Grist", "url": "https://grist.org/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "tier": 1, "snippet_allowed": false},
-    {"id": "unnews", "name": "UN News", "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "tier": 1, "snippet_allowed": false},
-    {"id": "nature", "name": "Nature (news)", "url": "https://www.nature.com/nature.rss", "tier": 1, "snippet_allowed": false},
-    {"id": "ieee", "name": "IEEE Spectrum", "url": "https://spectrum.ieee.org/feeds/feed.rss", "tier": 2, "snippet_allowed": false},
-    {"id": "mittr", "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "tier": 2, "snippet_allowed": false},
-    {"id": "ars", "name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "tier": 2, "snippet_allowed": false},
-    {"id": "bbcsci", "name": "BBC Science & Environment", "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "tier": 2, "snippet_allowed": false},
-    {"id": "guardianenv", "name": "Guardian Environment", "url": "https://www.theguardian.com/environment/rss", "tier": 2, "snippet_allowed": false}
+    {
+      "id": "mongabay",
+      "name": "Mongabay",
+      "url": "https://news.mongabay.com/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "carbonbrief",
+      "name": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "e360",
+      "name": "Yale Environment 360",
+      "url": "https://e360.yale.edu/feed.xml",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "positivenews",
+      "name": "Positive News",
+      "url": "https://www.positive.news/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "rtbc",
+      "name": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "grist",
+      "name": "Grist",
+      "url": "https://grist.org/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "owid",
+      "name": "Our World in Data",
+      "url": "https://ourworldindata.org/atom.xml",
+      "tier": 1,
+      "snippet_allowed": false
+    },
+    {
+      "id": "nature",
+      "name": "Nature (news)",
+      "url": "https://www.nature.com/nature.rss",
+      "tier": 1,
+      "snippet_allowed": false
+    },
+    {
+      "id": "ieee",
+      "name": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/feeds/feed.rss",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "mittr",
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "ars",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "bbcsci",
+      "name": "BBC Science & Environment",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "tier": 2,
+      "snippet_allowed": false
+    },
+    {
+      "id": "guardianenv",
+      "name": "Guardian Environment",
+      "url": "https://www.theguardian.com/environment/rss",
+      "tier": 2,
+      "snippet_allowed": false
+    }
   ]
 }

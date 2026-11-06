@@ -34,7 +34,7 @@ def rx(words): return re.compile(r"(?<![a-z0-9])(?:" + "|".join(words) + r")", r
 GROUP_RX = [  # first match wins; most specific first
     ("craft", rx([r"masonry", r"stove", r"kiln", r"chimney", r"lime plaster", r"timber[- ]frame", r"traditional building", r"craftsm", r"artisan", r"thatch", r"woodwork"])),
     ("arch",  rx([r"archaeolog", r"archeolog", r"excavat", r"shipwreck", r"\bwreck", r"ancient", r"medieval", r"roman\b", r"neolithic", r"bronze age", r"pyramid", r"\btomb", r"manuscript", r"radiocarbon", r"titanic", r"artefact", r"artifact"])),
-    ("alt",   rx([r"hemp", r"bio-?based", r"biomaterial", r"bioplastic", r"natural fib", r"renewable", r"\bsolar\b", r"wind (?:power|farm|turbine|energy)", r"geothermal", r"circular economy", r"recycl", r"\breuse", r"bamboo", r"mycelium", r"green hydrogen", r"heat pump", r"low-carbon (?:material|concrete|cement)", r"timber"])),
+    ("alt",   rx([r"hemp", r"bio-?based", r"biomaterial", r"bioplastic", r"natural fib", r"renewable", r"\bsolar\b", r"wind (?:power|farm|turbine|energy)", r"geothermal", r"circular economy", r"recycl", r"bamboo", r"mycelium", r"green hydrogen", r"heat pump", r"low-carbon (?:material|concrete|cement)", r"timber", r"\bco2\b", r"emissions", r"decarbon", r"clean power", r"electric vehicle"])),
     ("tech",  rx([r"quantum", r"robot", r"semiconductor", r"\bchips?\b", r"artificial intelligence", r"\bai\b", r"machine learning", r"\bbatter", r"\bfusion\b", r"nanotech", r"3d[- ]print", r"supercomputer", r"open-?source", r"crispr", r"gene editing"])),
     ("policy", rx([r"\blaws?\b", r"legislation", r"regulation", r"treaty", r"agreement", r"\bpolicy", r"parliament", r"directive", r"\bban on", r"subsid", r"carbon (?:price|tax|market)", r"ecodesign", r"court ruled", r"\bruling", r"protected area", r"conservation (?:initiative|plan)", r"\bfunding\b", r"\binitiative"])),
 ]
@@ -44,6 +44,8 @@ MARKET = rx([r"sponsored", r"advertorial", r"partner content", r"promoted", r"pr
 SUPER = rx([r"revolutionary", r"game-?changing", r"miracle", r"breakthrough", r"unbelievable"])
 HEMP_OUT = rx([r"\bcbd\b", r"cannabis", r"marijuana", r"\bweed\b", r"\bthc\b", r"dispensar", r"recreational", r"legali[sz]", r"psychedelic"])
 HEMP_OK = rx([r"industrial hemp", r"hempcrete", r"hemp (?:fib|fab|build|insul|plastic|concrete|textile|crop|seed|construction|material)"])
+SOLUTION = rx([r"solution", r"restor", r"reviv", r"adopt", r"agree", r"\blaws?\b", r"\bbans?\b", r"launch", r"improv", r"reduc", r"\bcuts?\b", r"\bfalls?\b", r"drops?\b", r"cleaner", r"clean energy", r"renewable", r"recycl", r"sustainab", r"protect", r"funding", r"pathway", r"roadmap", r"deploy", r"invest", r"approv", r"licen[cs]", r"certif", r"rewild", r"regenerat", r"efficien", r"low-carbon", r"lower carbon", r"carbon (?:storage|capture|neutral)", r"insulat", r"substitut", r"alternative", r"replac", r"innovat", r"new (?:method|material|technique|technology)", r"cooperat", r"collaborat", r"treaty", r"commit", r"expand", r"scal(?:e|ing) up", r"progress"])
+NONARTICLE = re.compile(r"^\s*(?:interactive|quiz|podcast|video|watch|newsletter|live|webinar|opinion|op-ed|editorial|letters?|photos?|gallery)\b\s*[:\u2013\u2014-]", re.I)
 FRINGE = rx([r"ancient aliens", r"lost civili[sz]ation", r"don.t want you to know", r"secret (?:of|history)", r"forbidden", r"suppressed", r"hidden history", r"mysterious", r"unexplained", r"anunnaki", r"atlantis"])
 
 EVID_STRONG = rx([r"peer-?reviewed", r"published in", r"\bstud(?:y|ies)\b", r"researchers", r"scientists", r"\bjournal\b", r"\breport\b", r"\bdata\b", r"analysis", r"survey", r"court", r"directive", r"regulation", r"agreement", r"radiocarbon", r"dating", r"excavation", r"\blaw\b"])
@@ -52,6 +54,7 @@ EVID_WEAK = rx([r"plans to", r"will launch", r"unveils", r"opinion", r"op-ed", r
 SCALE_BIG = rx([r"global", r"worldwide", r"countries", r"international", r"\beu\b", r"europe", r"united nations", r"million", r"billion"])
 SCALE_MID = rx([r"national", r"nationwide", r"country", r"\bstate\b", r"province", r"region", r"\bcity\b"])
 STOP = set("with from that this have will over into more than their about after could would which while there these those been were they them what when your also".split())
+GENERIC = set("climate global world report study analysis says said news new year years first largest after before amid across between under over many most much make makes made using could might year-on-year their".split())
 
 def log(*a): print(*a, flush=True)
 
@@ -105,15 +108,25 @@ def fetch(src):
         return r.read()
 
 def toks(s):
-    return {w for w in re.findall(r"[a-z]{4,}", s.lower()) if w not in STOP}
+    return {w for w in re.findall(r"[a-z]{4,}", s.lower()) if w not in STOP and w not in GENERIC}
 
 def jacc(a, b):
     return len(a & b) / len(a | b) if a and b else 0.0
 
+def same_story(a, b):
+    """Token sets of two titles. Same story if they overlap a lot, or share 3+ specific words that are half of the shorter title."""
+    if not a or not b: return False
+    inter = len(a & b)
+    return jacc(a, b) >= SAME_STORY or (inter >= 3 and inter / min(len(a), len(b)) >= 0.5)
+
+SUMMARY_GROUPS = ("craft", "arch")   # these may be recognised from the summary; the others must show in the title
 def classify(c):
-    text = " ".join([c["title"], c["summary"], c["cats"]])
     for name, r in GROUP_RX:
-        if r.search(text): return name
+        if r.search(c["title"]): return name
+    rest = " ".join([c["summary"], c["cats"]])
+    for name, r in GROUP_RX:
+        if name in SUMMARY_GROUPS and r.search(rest): return name
+    if re.search(r"hemp", rest, re.I) and HEMP_OK.search(rest): return "alt"
     return None
 
 def exclude_reason(c):
@@ -125,6 +138,7 @@ def exclude_reason(c):
     if FRINGE.search(text): return "fringe"
     if HEMP_OUT.search(text) and not HEMP_OK.search(text): return "hemp_out_of_scope"
     if re.search(r"[A-Z]{5,}.*[A-Z]{5,}", c["title"]): return "shouting"
+    if NONARTICLE.search(c["title"]): return "not_an_article"
     return None
 
 def score(c, all_c):
@@ -138,7 +152,7 @@ def score(c, all_c):
     age = (NOW - c["date"]).days if c["date"] else 999
     parts["recency"] = 2 if age <= 3 else (1 if age <= 14 else 0)
     mine = toks(c["title"])
-    conf = [o["source"] for o in all_c if o["source_id"] != c["source_id"] and jacc(mine, toks(o["title"])) >= SAME_STORY]
+    conf = [o["source"] for o in all_c if o["source_id"] != c["source_id"] and same_story(mine, toks(o["title"]))]
     parts["confirmation"] = 2 if conf else (1 if c["tier"] == 1 else 0)
     words = re.findall(r"\b[A-Z][a-z]{2,}", " ".join(text.split()[1:]))
     has_num = bool(re.search(r"\d", text))
@@ -196,6 +210,7 @@ def main():
         if r: dropped(r); continue
         g = classify(c)
         if not g: dropped("no_topic_match"); continue
+        if g != "arch" and not SOLUTION.search(c["title"] + " " + c["summary"]): dropped("no_solution_signal"); continue
         c["group"] = g
         pool.append(c)
     for c in pool:
@@ -204,7 +219,7 @@ def main():
     pool.sort(key=lambda c: (-c["score"], -(c["date"].timestamp() if c["date"] else 0)))
     uniq = []
     for c in pool:
-        if any(jacc(toks(c["title"]), toks(u["title"])) >= SAME_STORY for u in uniq): dropped("near_duplicate"); continue
+        if any(same_story(toks(c["title"]), toks(u["title"])) for u in uniq): dropped("near_duplicate"); continue
         uniq.append(c)
     elig = [c for c in uniq if c["score"] >= THRESHOLD]
     drop["below_threshold"] = len(uniq) - len(elig)
