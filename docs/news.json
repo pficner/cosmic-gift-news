@@ -1,19 +1,7 @@
 {
- "generated_at": "2026-11-06T18:27:41+00:00",
- "count": 11,
+ "generated_at": "2026-11-09T05:24:15+00:00",
+ "count": 10,
  "items": [
-  {
-   "title": "Tracing the spread of Celtic languages using ancient genomics",
-   "source": "Nature (news)",
-   "tier": "Primary",
-   "group": "arch",
-   "date": "2026-11-04",
-   "link": "https://www.nature.com/articles/s41586-026-11198-9",
-   "snippet": "",
-   "score": 9,
-   "source_id": "nature",
-   "added": "2026-11-06"
-  },
   {
    "title": "Scientists just found dinosaur blood that survived 115 million years",
    "source": "ScienceDaily (archaeology)",
@@ -75,6 +63,18 @@
    "added": "2026-11-06"
   },
   {
+   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-02",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261031221153.htm",
+   "snippet": "",
+   "score": 7,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-06"
+  },
+  {
    "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source": "Mongabay",
    "tier": "Editorial",
@@ -108,18 +108,6 @@
    "snippet": "",
    "score": 6,
    "source_id": "mongabay",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-02",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261031221153.htm",
-   "snippet": "",
-   "score": 7,
-   "source_id": "sciencedaily_arch",
    "added": "2026-11-06"
   },
   {

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:27:41+00:00",
+ "generated_at": "2026-11-09T05:24:15+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -47,7 +47,7 @@
   },
   "bbcsci": {
    "status": "ok",
-   "items": 40
+   "items": 41
   },
   "guardianenv": {
    "status": "ok",
@@ -75,50 +75,32 @@
   }
  },
  "dropped": {
+  "conflict": 30,
   "no_topic_match": 329,
-  "conflict": 27,
-  "no_solution_signal": 41,
+  "repeated": 10,
+  "no_solution_signal": 39,
   "marketing": 12,
   "problem_without_action": 1,
   "not_an_article": 1,
   "explainer_not_news": 15,
   "alarm": 16,
-  "off_topic_or_product": 7,
+  "shouting": 1,
+  "off_topic_or_product": 6,
   "fringe": 8,
   "research_paper_not_news": 1,
-  "hemp_out_of_scope": 2,
-  "near_duplicate": 3,
-  "carried_over_candidates": 0,
-  "below_threshold": 69
+  "hemp_out_of_scope": 3,
+  "near_duplicate": 2,
+  "carried_over_candidates": 11,
+  "below_threshold": 71
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
-  {
-   "title": "Tracing the spread of Celtic languages using ancient genomics",
-   "source_id": "nature",
-   "group": "arch",
-   "score": 9,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 1,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
   {
    "title": "Scientists just found dinosaur blood that survived 115 million years",
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -126,13 +108,7 @@
    "source_id": "mongabay",
    "group": "alt",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -140,13 +116,7 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 1,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -154,13 +124,7 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 1
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -168,55 +132,7 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 1
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 6,
-   "parts": {
-    "evidence": 0,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
-   "source_id": "carbonbrief",
-   "group": "alt",
-   "score": 6,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 6,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -224,13 +140,31 @@
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
+   "source_id": "carbonbrief",
+   "group": "alt",
+   "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 6,
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -238,20 +172,14 @@
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 1,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 543,
-  "after_filters": 83,
-  "eligible": 11,
-  "chosen": 11
+  "candidates": 544,
+  "after_filters": 72,
+  "eligible": 10,
+  "chosen": 10
  }
 }
