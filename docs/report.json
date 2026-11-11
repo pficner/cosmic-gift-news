@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T05:24:15+00:00",
+ "generated_at": "2026-11-11T05:17:35+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -75,31 +75,72 @@
   }
  },
  "dropped": {
-  "conflict": 30,
-  "no_topic_match": 329,
-  "repeated": 10,
-  "no_solution_signal": 39,
-  "marketing": 12,
-  "problem_without_action": 1,
+  "no_topic_match": 326,
+  "conflict": 35,
+  "alarm": 12,
+  "explainer_not_news": 17,
+  "repeated": 7,
   "not_an_article": 1,
-  "explainer_not_news": 15,
-  "alarm": 16,
+  "marketing": 10,
+  "no_solution_signal": 40,
+  "research_paper_not_news": 2,
   "shouting": 1,
   "off_topic_or_product": 6,
   "fringe": 8,
-  "research_paper_not_news": 1,
-  "hemp_out_of_scope": 3,
-  "near_duplicate": 2,
-  "carried_over_candidates": 11,
-  "below_threshold": 71
+  "hemp_out_of_scope": 4,
+  "near_duplicate": 1,
+  "carried_over_candidates": 10,
+  "below_threshold": 76
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
   {
-   "title": "Scientists just found dinosaur blood that survived 115 million years",
+   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Did early humans collect keepsakes 500,000 years ago?",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Scientists just found dinosaur blood that survived 115 million years",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 7,
    "parts": {},
    "confirmed_by": []
   },
@@ -107,38 +148,6 @@
    "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
    "source_id": "mongabay",
    "group": "alt",
-   "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Centuries-old cemetery helps scientists link climate shocks to Industrial Revolution disease",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Cold without consequences? Short-term climate fluctuations appear to have had less impact on early farmers",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
    "score": 7,
    "parts": {},
    "confirmed_by": []
@@ -147,7 +156,7 @@
    "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 6,
+   "score": 5,
    "parts": {},
    "confirmed_by": []
   },
@@ -155,7 +164,7 @@
    "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
    "source_id": "carbonbrief",
    "group": "alt",
-   "score": 6,
+   "score": 5,
    "parts": {},
    "confirmed_by": []
   },
@@ -163,23 +172,15 @@
    "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 6,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Ancient ape fossil in Egypt could rewrite the story of human origins",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 7,
+   "score": 5,
    "parts": {},
    "confirmed_by": []
   }
  ],
  "counts": {
   "candidates": 544,
-  "after_filters": 72,
-  "eligible": 10,
-  "chosen": 10
+  "after_filters": 75,
+  "eligible": 8,
+  "chosen": 8
  }
 }

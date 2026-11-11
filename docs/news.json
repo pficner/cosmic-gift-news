@@ -1,7 +1,43 @@
 {
- "generated_at": "2026-11-09T05:24:15+00:00",
- "count": 10,
+ "generated_at": "2026-11-11T05:17:35+00:00",
+ "count": 8,
  "items": [
+  {
+   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-11",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261110042532.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-11"
+  },
+  {
+   "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-10",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261105085201.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-11"
+  },
+  {
+   "title": "Did early humans collect keepsakes 500,000 years ago?",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-09",
+   "link": "https://phys.org/news/2026-11-early-humans-keepsakes-years.html",
+   "snippet": "",
+   "score": 8,
+   "source_id": "physorg_arch",
+   "added": "2026-11-11"
+  },
   {
    "title": "Scientists just found dinosaur blood that survived 115 million years",
    "source": "ScienceDaily (archaeology)",
@@ -24,54 +60,6 @@
    "snippet": "",
    "score": 8,
    "source_id": "mongabay",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "Centuries-old cemetery helps scientists link climate shocks to Industrial Revolution disease",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-05",
-   "link": "https://phys.org/news/2026-11-centuries-cemetery-scientists-link-climate.html",
-   "snippet": "",
-   "score": 7,
-   "source_id": "physorg_arch",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "The marginalia found in millions of Arabic manuscripts could reshape our understanding of Islamic history",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-03",
-   "link": "https://phys.org/news/2026-11-marginalia-millions-arabic-manuscripts-reshape.html",
-   "snippet": "",
-   "score": 7,
-   "source_id": "physorg_arch",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "Cold without consequences? Short-term climate fluctuations appear to have had less impact on early farmers",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-03",
-   "link": "https://phys.org/news/2026-11-cold-consequences-short-term-climate.html",
-   "snippet": "",
-   "score": 7,
-   "source_id": "physorg_arch",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "30,000-year-old DNA reveals Ice Age Europeans were far more connected than we thought",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-02",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261031221153.htm",
-   "snippet": "",
-   "score": 7,
-   "source_id": "sciencedaily_arch",
    "added": "2026-11-06"
   },
   {
@@ -108,18 +96,6 @@
    "snippet": "",
    "score": 6,
    "source_id": "mongabay",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "Ancient ape fossil in Egypt could rewrite the story of human origins",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-01",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261031011638.htm",
-   "snippet": "",
-   "score": 7,
-   "source_id": "sciencedaily_arch",
    "added": "2026-11-06"
   }
  ]
