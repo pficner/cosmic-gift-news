@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-11T05:17:35+00:00",
- "count": 8,
+ "generated_at": "2026-11-13T05:17:26+00:00",
+ "count": 9,
  "items": [
   {
    "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
@@ -39,6 +39,18 @@
    "added": "2026-11-11"
   },
   {
+   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
+   "source": "Smithsonian Magazine",
+   "tier": "Editorial",
+   "group": "alt",
+   "date": "2026-11-12",
+   "link": "https://www.smithsonianmag.com/smart-news/global-fossil-fuel-emissions-are-expected-to-drop-this-year-partly-because-of-the-conflicts-iran-ukraine-180989855/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "smithsonian",
+   "added": "2026-11-13"
+  },
+  {
    "title": "Scientists just found dinosaur blood that survived 115 million years",
    "source": "ScienceDaily (archaeology)",
    "tier": "Specialist",
@@ -63,16 +75,28 @@
    "added": "2026-11-06"
   },
   {
-   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
+   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
    "source": "Mongabay",
    "tier": "Editorial",
    "group": "policy",
-   "date": "2026-11-06",
-   "link": "https://news.mongabay.com/2026/11/kenya-launches-160-million-conservation-initiative-to-support-communities-and-biodiversity/",
+   "date": "2026-11-11",
+   "link": "https://news.mongabay.com/2026/11/audit-says-europes-marine-protected-areas-failing-as-2030-deadline-looms/",
    "snippet": "",
    "score": 6,
    "source_id": "mongabay",
-   "added": "2026-11-06"
+   "added": "2026-11-13"
+  },
+  {
+   "title": "Funding shortages threaten search for critically endangered ‘Asian unicorn’",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-11",
+   "link": "https://news.mongabay.com/short-article/2026/11/funding-shortages-threaten-search-for-critically-endangered-asian-unicorn/",
+   "snippet": "",
+   "score": 6,
+   "source_id": "mongabay",
+   "added": "2026-11-13"
   },
   {
    "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
@@ -84,18 +108,6 @@
    "snippet": "",
    "score": 6,
    "source_id": "carbonbrief",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-03",
-   "link": "https://news.mongabay.com/2026/11/high-expectations-but-no-agreement-on-antarctic-marine-protection-krill-fishing/",
-   "snippet": "",
-   "score": 6,
-   "source_id": "mongabay",
    "added": "2026-11-06"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T05:17:35+00:00",
+ "generated_at": "2026-11-13T05:17:26+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -14,8 +14,8 @@
    "items": 100
   },
   "positivenews": {
-   "status": "ok",
-   "items": 10
+   "status": "failed",
+   "reason": "HTTP 403"
   },
   "rtbc": {
    "status": "ok",
@@ -75,22 +75,20 @@
   }
  },
  "dropped": {
-  "no_topic_match": 326,
-  "conflict": 35,
-  "alarm": 12,
-  "explainer_not_news": 17,
-  "repeated": 7,
+  "no_topic_match": 324,
+  "explainer_not_news": 13,
+  "alarm": 19,
+  "conflict": 30,
+  "repeated": 8,
   "not_an_article": 1,
-  "marketing": 10,
-  "no_solution_signal": 40,
-  "research_paper_not_news": 2,
-  "shouting": 1,
-  "off_topic_or_product": 6,
-  "fringe": 8,
+  "marketing": 11,
+  "no_solution_signal": 37,
+  "research_paper_not_news": 3,
+  "off_topic_or_product": 2,
   "hemp_out_of_scope": 4,
-  "near_duplicate": 1,
-  "carried_over_candidates": 10,
-  "below_threshold": 76
+  "fringe": 8,
+  "carried_over_candidates": 8,
+  "below_threshold": 70
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -99,13 +97,7 @@
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -113,13 +105,7 @@
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -127,12 +113,20 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 8,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
+   "source_id": "smithsonian",
+   "group": "alt",
+   "score": 7,
    "parts": {
     "evidence": 2,
     "scale": 2,
     "recency": 2,
     "confirmation": 0,
-    "concreteness": 2
+    "concreteness": 1
    },
    "confirmed_by": []
   },
@@ -153,11 +147,31 @@
    "confirmed_by": []
   },
   {
-   "title": "Kenya launches $160 million conservation initiative to support communities and biodiversity",
+   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 5,
-   "parts": {},
+   "score": 6,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Funding shortages threaten search for critically endangered ‘Asian unicorn’",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 6,
+   "parts": {
+    "evidence": 2,
+    "scale": 0,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
    "confirmed_by": []
   },
   {
@@ -167,20 +181,12 @@
    "score": 5,
    "parts": {},
    "confirmed_by": []
-  },
-  {
-   "title": "High expectations but no agreement on Antarctic marine protection, krill fishing",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 5,
-   "parts": {},
-   "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 544,
-  "after_filters": 75,
-  "eligible": 8,
-  "chosen": 8
+  "candidates": 534,
+  "after_filters": 74,
+  "eligible": 12,
+  "chosen": 9
  }
 }
