@@ -1,7 +1,55 @@
 {
- "generated_at": "2026-11-13T05:17:26+00:00",
+ "generated_at": "2026-11-15T05:12:13+00:00",
  "count": 9,
  "items": [
+  {
+   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-15",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261112230502.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-15"
+  },
+  {
+   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-12",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261112025529.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-15"
+  },
+  {
+   "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-14",
+   "link": "https://phys.org/news/2026-11-archaeologists-wealth-status-europe-early.html",
+   "snippet": "",
+   "score": 7,
+   "source_id": "physorg_arch",
+   "added": "2026-11-15"
+  },
+  {
+   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
+   "source": "Smithsonian Magazine",
+   "tier": "Editorial",
+   "group": "alt",
+   "date": "2026-11-12",
+   "link": "https://www.smithsonianmag.com/smart-news/global-fossil-fuel-emissions-are-expected-to-drop-this-year-partly-because-of-the-conflicts-iran-ukraine-180989855/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "smithsonian",
+   "added": "2026-11-13"
+  },
   {
    "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
    "source": "ScienceDaily (archaeology)",
@@ -9,18 +57,6 @@
    "group": "arch",
    "date": "2026-11-11",
    "link": "https://www.sciencedaily.com/releases/2026/11/261110042532.htm",
-   "snippet": "",
-   "score": 8,
-   "source_id": "sciencedaily_arch",
-   "added": "2026-11-11"
-  },
-  {
-   "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-10",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261105085201.htm",
    "snippet": "",
    "score": 8,
    "source_id": "sciencedaily_arch",
@@ -37,42 +73,6 @@
    "score": 8,
    "source_id": "physorg_arch",
    "added": "2026-11-11"
-  },
-  {
-   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
-   "source": "Smithsonian Magazine",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-12",
-   "link": "https://www.smithsonianmag.com/smart-news/global-fossil-fuel-emissions-are-expected-to-drop-this-year-partly-because-of-the-conflicts-iran-ukraine-180989855/",
-   "snippet": "",
-   "score": 7,
-   "source_id": "smithsonian",
-   "added": "2026-11-13"
-  },
-  {
-   "title": "Scientists just found dinosaur blood that survived 115 million years",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-06",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261105224542.htm",
-   "snippet": "",
-   "score": 8,
-   "source_id": "sciencedaily_arch",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-05",
-   "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
-   "snippet": "",
-   "score": 8,
-   "source_id": "mongabay",
-   "added": "2026-11-06"
   },
   {
    "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
@@ -99,15 +99,15 @@
    "added": "2026-11-13"
   },
   {
-   "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
-   "source": "Carbon Brief",
+   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
+   "source": "Mongabay",
    "tier": "Editorial",
    "group": "alt",
-   "date": "2026-11-06",
-   "link": "https://www.carbonbrief.org/analysis-chinas-quarterly-co2-falls-3-in-largest-drop-since-covid",
+   "date": "2026-11-05",
+   "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
    "snippet": "",
-   "score": 6,
-   "source_id": "carbonbrief",
+   "score": 8,
+   "source_id": "mongabay",
    "added": "2026-11-06"
   }
  ]

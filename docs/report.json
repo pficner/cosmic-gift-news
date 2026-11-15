@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T05:17:26+00:00",
+ "generated_at": "2026-11-15T05:12:13+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -70,56 +70,61 @@
    "items": 10
   },
   "anthropocene": {
-   "status": "ok",
-   "items": 30
+   "status": "failed",
+   "reason": "ParseError: not well-formed (invalid token): line 1, column 119"
   }
  },
  "dropped": {
-  "no_topic_match": 324,
-  "explainer_not_news": 13,
-  "alarm": 19,
-  "conflict": 30,
-  "repeated": 8,
+  "no_topic_match": 308,
+  "repeated": 9,
+  "explainer_not_news": 14,
+  "conflict": 25,
   "not_an_article": 1,
-  "marketing": 11,
-  "no_solution_signal": 37,
+  "marketing": 10,
+  "alarm": 22,
+  "no_solution_signal": 33,
   "research_paper_not_news": 3,
   "off_topic_or_product": 2,
-  "hemp_out_of_scope": 4,
-  "fringe": 8,
-  "carried_over_candidates": 8,
-  "below_threshold": 70
+  "fringe": 6,
+  "hemp_out_of_scope": 2,
+  "near_duplicate": 1,
+  "carried_over_candidates": 9,
+  "below_threshold": 66
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
   {
-   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
+   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {},
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
    "confirmed_by": []
   },
   {
-   "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
+   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {},
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
    "confirmed_by": []
   },
   {
-   "title": "Did early humans collect keepsakes 500,000 years ago?",
+   "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
    "source_id": "physorg_arch",
    "group": "arch",
-   "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
-   "source_id": "smithsonian",
-   "group": "alt",
    "score": 7,
    "parts": {
     "evidence": 2,
@@ -131,7 +136,15 @@
    "confirmed_by": []
   },
   {
-   "title": "Scientists just found dinosaur blood that survived 115 million years",
+   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
+   "source_id": "smithsonian",
+   "group": "alt",
+   "score": 7,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
    "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 7,
@@ -139,9 +152,9 @@
    "confirmed_by": []
   },
   {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source_id": "mongabay",
-   "group": "alt",
+   "title": "Did early humans collect keepsakes 500,000 years ago?",
+   "source_id": "physorg_arch",
+   "group": "arch",
    "score": 7,
    "parts": {},
    "confirmed_by": []
@@ -151,13 +164,7 @@
    "source_id": "mongabay",
    "group": "policy",
    "score": 6,
-   "parts": {
-    "evidence": 0,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -165,28 +172,22 @@
    "source_id": "mongabay",
    "group": "policy",
    "score": 6,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "Analysis: China’s quarterly CO2 falls 3% in largest drop since Covid",
-   "source_id": "carbonbrief",
+   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
+   "source_id": "mongabay",
    "group": "alt",
-   "score": 5,
+   "score": 6,
    "parts": {},
    "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 534,
-  "after_filters": 74,
-  "eligible": 12,
+  "candidates": 504,
+  "after_filters": 69,
+  "eligible": 11,
   "chosen": 9
  }
 }
