@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T05:12:13+00:00",
+ "generated_at": "2026-11-17T05:15:53+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -70,32 +70,33 @@
    "items": 10
   },
   "anthropocene": {
-   "status": "failed",
-   "reason": "ParseError: not well-formed (invalid token): line 1, column 119"
+   "status": "ok",
+   "items": 30
   }
  },
  "dropped": {
-  "no_topic_match": 308,
-  "repeated": 9,
-  "explainer_not_news": 14,
-  "conflict": 25,
+  "no_topic_match": 322,
+  "problem_without_action": 1,
+  "conflict": 34,
+  "no_solution_signal": 40,
+  "explainer_not_news": 11,
+  "repeated": 10,
   "not_an_article": 1,
-  "marketing": 10,
+  "marketing": 12,
   "alarm": 22,
-  "no_solution_signal": 33,
   "research_paper_not_news": 3,
   "off_topic_or_product": 2,
-  "fringe": 6,
-  "hemp_out_of_scope": 2,
+  "fringe": 5,
+  "hemp_out_of_scope": 1,
   "near_duplicate": 1,
   "carried_over_candidates": 9,
-  "below_threshold": 66
+  "below_threshold": 65
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
   {
-   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
-   "source_id": "sciencedaily_arch",
+   "title": "Ancient height trends show technological advances did not always improve living standards",
+   "source_id": "physorg_arch",
    "group": "arch",
    "score": 8,
    "parts": {
@@ -108,15 +109,59 @@
    "confirmed_by": []
   },
   {
-   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
+   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
+   "source_id": "guardianenv",
+   "group": "policy",
    "score": 8,
    "parts": {
     "evidence": 2,
     "scale": 2,
     "recency": 2,
     "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 8,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 8,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
+   "source_id": "mongabay",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 1,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
+   "source_id": "nature",
+   "group": "alt",
+   "score": 7,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 1,
     "concreteness": 2
    },
    "confirmed_by": []
@@ -126,20 +171,30 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 7,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 1
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
    "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
    "source_id": "smithsonian",
    "group": "alt",
-   "score": 7,
+   "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
+   "source_id": "mongabay",
+   "group": "alt",
+   "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 5,
    "parts": {},
    "confirmed_by": []
   },
@@ -158,36 +213,12 @@
    "score": 7,
    "parts": {},
    "confirmed_by": []
-  },
-  {
-   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 6,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Funding shortages threaten search for critically endangered ‘Asian unicorn’",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 6,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source_id": "mongabay",
-   "group": "alt",
-   "score": 6,
-   "parts": {},
-   "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 504,
-  "after_filters": 69,
-  "eligible": 11,
-  "chosen": 9
+  "candidates": 534,
+  "after_filters": 70,
+  "eligible": 13,
+  "chosen": 12
  }
 }

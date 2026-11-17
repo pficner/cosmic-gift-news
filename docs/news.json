@@ -1,7 +1,31 @@
 {
- "generated_at": "2026-11-15T05:12:13+00:00",
- "count": 9,
+ "generated_at": "2026-11-17T05:15:53+00:00",
+ "count": 12,
  "items": [
+  {
+   "title": "Ancient height trends show technological advances did not always improve living standards",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-16",
+   "link": "https://phys.org/news/2026-11-ancient-height-trends-technological-advances.html",
+   "snippet": "",
+   "score": 8,
+   "source_id": "physorg_arch",
+   "added": "2026-11-17"
+  },
+  {
+   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-16",
+   "link": "https://www.theguardian.com/environment/2026/nov/16/cop31-draft-text-draw-out-parties-find-agreement-president-talks-says",
+   "snippet": "",
+   "score": 8,
+   "source_id": "guardianenv",
+   "added": "2026-11-17"
+  },
   {
    "title": "Dinosaurs may have been eating seaweed 100 million years ago",
    "source": "ScienceDaily (archaeology)",
@@ -25,6 +49,30 @@
    "score": 8,
    "source_id": "sciencedaily_arch",
    "added": "2026-11-15"
+  },
+  {
+   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "arch",
+   "date": "2026-11-16",
+   "link": "https://news.mongabay.com/short-article/2026/11/fossil-of-extinct-giant-bird-discovered-in-flores-cave-indonesia/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "mongabay",
+   "added": "2026-11-17"
+  },
+  {
+   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
+   "source": "Nature (news)",
+   "tier": "Primary",
+   "group": "alt",
+   "date": "2026-11-16",
+   "link": "https://www.nature.com/articles/d41586-026-03763-z",
+   "snippet": "",
+   "score": 7,
+   "source_id": "nature",
+   "added": "2026-11-17"
   },
   {
    "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
@@ -51,6 +99,30 @@
    "added": "2026-11-13"
   },
   {
+   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "alt",
+   "date": "2026-11-05",
+   "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
+   "snippet": "",
+   "score": 8,
+   "source_id": "mongabay",
+   "added": "2026-11-06"
+  },
+  {
+   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-11",
+   "link": "https://news.mongabay.com/2026/11/audit-says-europes-marine-protected-areas-failing-as-2030-deadline-looms/",
+   "snippet": "",
+   "score": 6,
+   "source_id": "mongabay",
+   "added": "2026-11-13"
+  },
+  {
    "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
    "source": "ScienceDaily (archaeology)",
    "tier": "Specialist",
@@ -73,42 +145,6 @@
    "score": 8,
    "source_id": "physorg_arch",
    "added": "2026-11-11"
-  },
-  {
-   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-11",
-   "link": "https://news.mongabay.com/2026/11/audit-says-europes-marine-protected-areas-failing-as-2030-deadline-looms/",
-   "snippet": "",
-   "score": 6,
-   "source_id": "mongabay",
-   "added": "2026-11-13"
-  },
-  {
-   "title": "Funding shortages threaten search for critically endangered ‘Asian unicorn’",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-11",
-   "link": "https://news.mongabay.com/short-article/2026/11/funding-shortages-threaten-search-for-critically-endangered-asian-unicorn/",
-   "snippet": "",
-   "score": 6,
-   "source_id": "mongabay",
-   "added": "2026-11-13"
-  },
-  {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-05",
-   "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
-   "snippet": "",
-   "score": 8,
-   "source_id": "mongabay",
-   "added": "2026-11-06"
   }
  ]
 }
