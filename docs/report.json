@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T05:15:53+00:00",
+ "generated_at": "2026-11-19T05:23:13+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -47,7 +47,7 @@
   },
   "bbcsci": {
    "status": "ok",
-   "items": 41
+   "items": 42
   },
   "guardianenv": {
    "status": "ok",
@@ -75,22 +75,22 @@
   }
  },
  "dropped": {
-  "no_topic_match": 322,
-  "problem_without_action": 1,
-  "conflict": 34,
-  "no_solution_signal": 40,
-  "explainer_not_news": 11,
-  "repeated": 10,
+  "no_topic_match": 321,
+  "alarm": 21,
+  "explainer_not_news": 10,
+  "problem_without_action": 2,
+  "conflict": 28,
+  "no_solution_signal": 43,
+  "repeated": 12,
   "not_an_article": 1,
   "marketing": 12,
-  "alarm": 22,
   "research_paper_not_news": 3,
-  "off_topic_or_product": 2,
+  "off_topic_or_product": 3,
   "fringe": 5,
   "hemp_out_of_scope": 1,
-  "near_duplicate": 1,
-  "carried_over_candidates": 9,
-  "below_threshold": 65
+  "near_duplicate": 2,
+  "carried_over_candidates": 12,
+  "below_threshold": 72
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -99,13 +99,7 @@
    "source_id": "physorg_arch",
    "group": "arch",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -113,35 +107,13 @@
    "source_id": "guardianenv",
    "group": "policy",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 8,
    "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
-   "source_id": "mongabay",
-   "group": "arch",
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source_id": "guardianenv",
+   "group": "policy",
    "score": 7,
    "parts": {
     "evidence": 2,
@@ -153,41 +125,65 @@
    "confirmed_by": []
   },
   {
-   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
-   "source_id": "nature",
-   "group": "alt",
+   "title": "Mesopotamian Chronology Refined with Tree Rings and Ice Cores",
+   "source_id": "archaeology_mag",
+   "group": "arch",
    "score": 7,
    "parts": {
-    "evidence": 0,
-    "scale": 2,
+    "evidence": 2,
+    "scale": 0,
     "recency": 2,
-    "confirmation": 1,
-    "concreteness": 2
+    "confirmation": 2,
+    "concreteness": 1
    },
-   "confirmed_by": []
+   "confirmed_by": [
+    "Phys.org (archaeology & fossils)"
+   ]
   },
   {
-   "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
-   "source_id": "physorg_arch",
+   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
+   "source_id": "mongabay",
    "group": "arch",
    "score": 7,
    "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
-   "source_id": "smithsonian",
+   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
+   "source_id": "nature",
    "group": "alt",
-   "score": 6,
+   "score": 7,
    "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source_id": "mongabay",
-   "group": "alt",
-   "score": 6,
+   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 7,
    "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
+   "source_id": "sciencedaily_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 6,
+   "parts": {
+    "evidence": 0,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
    "confirmed_by": []
   },
   {
@@ -197,28 +193,12 @@
    "score": 5,
    "parts": {},
    "confirmed_by": []
-  },
-  {
-   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Did early humans collect keepsakes 500,000 years ago?",
-   "source_id": "physorg_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 534,
-  "after_filters": 70,
-  "eligible": 13,
-  "chosen": 12
+  "candidates": 535,
+  "after_filters": 73,
+  "eligible": 11,
+  "chosen": 10
  }
 }

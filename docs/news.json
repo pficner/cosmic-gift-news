@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-17T05:15:53+00:00",
- "count": 12,
+ "generated_at": "2026-11-19T05:23:13+00:00",
+ "count": 10,
  "items": [
   {
    "title": "Ancient height trends show technological advances did not always improve living standards",
@@ -24,6 +24,54 @@
    "snippet": "",
    "score": 8,
    "source_id": "guardianenv",
+   "added": "2026-11-17"
+  },
+  {
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-17",
+   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
+   "snippet": "",
+   "score": 7,
+   "source_id": "guardianenv",
+   "added": "2026-11-19"
+  },
+  {
+   "title": "Mesopotamian Chronology Refined with Tree Rings and Ice Cores",
+   "source": "Archaeology Magazine (AIA)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-17",
+   "link": "https://archaeology.org/news/2026/11/17/mesopotamian-chronology-refined-with-tree-rings-and-ice-cores/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "archaeology_mag",
+   "added": "2026-11-19"
+  },
+  {
+   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "arch",
+   "date": "2026-11-16",
+   "link": "https://news.mongabay.com/short-article/2026/11/fossil-of-extinct-giant-bird-discovered-in-flores-cave-indonesia/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "mongabay",
+   "added": "2026-11-17"
+  },
+  {
+   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
+   "source": "Nature (news)",
+   "tier": "Primary",
+   "group": "alt",
+   "date": "2026-11-16",
+   "link": "https://www.nature.com/articles/d41586-026-03763-z",
+   "snippet": "",
+   "score": 7,
+   "source_id": "nature",
    "added": "2026-11-17"
   },
   {
@@ -51,64 +99,16 @@
    "added": "2026-11-15"
   },
   {
-   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
+   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
    "source": "Mongabay",
    "tier": "Editorial",
-   "group": "arch",
-   "date": "2026-11-16",
-   "link": "https://news.mongabay.com/short-article/2026/11/fossil-of-extinct-giant-bird-discovered-in-flores-cave-indonesia/",
+   "group": "policy",
+   "date": "2026-11-18",
+   "link": "https://news.mongabay.com/short-article/2026/11/greenpeace-drops-attenboulder-to-deter-uk-bottom-trawlers-in-a-marine-protected-area/",
    "snippet": "",
-   "score": 7,
+   "score": 6,
    "source_id": "mongabay",
-   "added": "2026-11-17"
-  },
-  {
-   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
-   "source": "Nature (news)",
-   "tier": "Primary",
-   "group": "alt",
-   "date": "2026-11-16",
-   "link": "https://www.nature.com/articles/d41586-026-03763-z",
-   "snippet": "",
-   "score": 7,
-   "source_id": "nature",
-   "added": "2026-11-17"
-  },
-  {
-   "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-14",
-   "link": "https://phys.org/news/2026-11-archaeologists-wealth-status-europe-early.html",
-   "snippet": "",
-   "score": 7,
-   "source_id": "physorg_arch",
-   "added": "2026-11-15"
-  },
-  {
-   "title": "Global Fossil Fuel Emissions Are Expected to Drop This Year, Partly Because of the Conflicts in Iran and Ukraine",
-   "source": "Smithsonian Magazine",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-12",
-   "link": "https://www.smithsonianmag.com/smart-news/global-fossil-fuel-emissions-are-expected-to-drop-this-year-partly-because-of-the-conflicts-iran-ukraine-180989855/",
-   "snippet": "",
-   "score": 7,
-   "source_id": "smithsonian",
-   "added": "2026-11-13"
-  },
-  {
-   "title": "How Ghana’s new license to sell sustainable timber improves institutions & cooperation (analysis)",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "alt",
-   "date": "2026-11-05",
-   "link": "https://news.mongabay.com/2026/11/how-ghanas-new-license-to-sell-sustainable-timber-improves-institutions-collaboration-analysis/",
-   "snippet": "",
-   "score": 8,
-   "source_id": "mongabay",
-   "added": "2026-11-06"
+   "added": "2026-11-19"
   },
   {
    "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
@@ -121,30 +121,6 @@
    "score": 6,
    "source_id": "mongabay",
    "added": "2026-11-13"
-  },
-  {
-   "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-11",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261110042532.htm",
-   "snippet": "",
-   "score": 8,
-   "source_id": "sciencedaily_arch",
-   "added": "2026-11-11"
-  },
-  {
-   "title": "Did early humans collect keepsakes 500,000 years ago?",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-09",
-   "link": "https://phys.org/news/2026-11-early-humans-keepsakes-years.html",
-   "snippet": "",
-   "score": 8,
-   "source_id": "physorg_arch",
-   "added": "2026-11-11"
   }
  ]
 }
