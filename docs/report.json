@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T05:23:13+00:00",
+ "generated_at": "2026-11-21T05:13:27+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -70,54 +70,37 @@
    "items": 10
   },
   "anthropocene": {
-   "status": "ok",
-   "items": 30
+   "status": "failed",
+   "reason": "ParseError: not well-formed (invalid token): line 1, column 119"
   }
  },
  "dropped": {
-  "no_topic_match": 321,
-  "alarm": 21,
-  "explainer_not_news": 10,
-  "problem_without_action": 2,
-  "conflict": 28,
-  "no_solution_signal": 43,
-  "repeated": 12,
+  "no_topic_match": 290,
+  "marketing": 17,
+  "conflict": 30,
+  "repeated": 11,
+  "no_solution_signal": 44,
+  "explainer_not_news": 12,
   "not_an_article": 1,
-  "marketing": 12,
+  "alarm": 19,
   "research_paper_not_news": 3,
-  "off_topic_or_product": 3,
-  "fringe": 5,
+  "off_topic_or_product": 2,
+  "fringe": 9,
   "hemp_out_of_scope": 1,
-  "near_duplicate": 2,
-  "carried_over_candidates": 12,
-  "below_threshold": 72
+  "near_duplicate": 1,
+  "carried_over_candidates": 10,
+  "below_threshold": 66
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
   {
-   "title": "Ancient height trends show technological advances did not always improve living standards",
-   "source_id": "physorg_arch",
+   "title": "A 3-million-year-old child just made human evolution far more complicated",
+   "source_id": "sciencedaily_arch",
    "group": "arch",
    "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
-   "source_id": "guardianenv",
-   "group": "policy",
-   "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source_id": "guardianenv",
-   "group": "policy",
-   "score": 7,
    "parts": {
     "evidence": 2,
-    "scale": 1,
+    "scale": 2,
     "recency": 2,
     "confirmation": 0,
     "concreteness": 2
@@ -125,33 +108,39 @@
    "confirmed_by": []
   },
   {
-   "title": "Mesopotamian Chronology Refined with Tree Rings and Ice Cores",
-   "source_id": "archaeology_mag",
+   "title": "This strange creature lived 309 million years ago, long before the dinosaurs",
+   "source_id": "sciencedaily_arch",
    "group": "arch",
-   "score": 7,
+   "score": 8,
    "parts": {
     "evidence": 2,
-    "scale": 0,
+    "scale": 2,
     "recency": 2,
-    "confirmation": 2,
-    "concreteness": 1
+    "confirmation": 0,
+    "concreteness": 2
    },
-   "confirmed_by": [
-    "Phys.org (archaeology & fossils)"
-   ]
+   "confirmed_by": []
   },
   {
-   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
-   "source_id": "mongabay",
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source_id": "guardianenv",
+   "group": "policy",
+   "score": 7,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Ancient height trends show technological advances did not always improve living standards",
+   "source_id": "physorg_arch",
    "group": "arch",
    "score": 7,
    "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
-   "source_id": "nature",
-   "group": "alt",
+   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
+   "source_id": "guardianenv",
+   "group": "policy",
    "score": 7,
    "parts": {},
    "confirmed_by": []
@@ -165,21 +154,13 @@
    "confirmed_by": []
   },
   {
-   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
-   "source_id": "sciencedaily_arch",
-   "group": "arch",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
+   "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
    "source_id": "mongabay",
    "group": "policy",
    "score": 6,
    "parts": {
-    "evidence": 0,
-    "scale": 2,
+    "evidence": 2,
+    "scale": 0,
     "recency": 2,
     "confirmation": 0,
     "concreteness": 2
@@ -187,18 +168,18 @@
    "confirmed_by": []
   },
   {
-   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
+   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
    "source_id": "mongabay",
    "group": "policy",
-   "score": 5,
+   "score": 6,
    "parts": {},
    "confirmed_by": []
   }
  ],
  "counts": {
-  "candidates": 535,
-  "after_filters": 73,
-  "eligible": 11,
-  "chosen": 10
+  "candidates": 505,
+  "after_filters": 66,
+  "eligible": 9,
+  "chosen": 8
  }
 }

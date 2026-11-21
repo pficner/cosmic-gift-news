@@ -1,7 +1,43 @@
 {
- "generated_at": "2026-11-19T05:23:13+00:00",
- "count": 10,
+ "generated_at": "2026-11-21T05:13:27+00:00",
+ "count": 8,
  "items": [
+  {
+   "title": "A 3-million-year-old child just made human evolution far more complicated",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-20",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261118065531.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-21"
+  },
+  {
+   "title": "This strange creature lived 309 million years ago, long before the dinosaurs",
+   "source": "ScienceDaily (archaeology)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-18",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261117033928.htm",
+   "snippet": "",
+   "score": 8,
+   "source_id": "sciencedaily_arch",
+   "added": "2026-11-21"
+  },
+  {
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-17",
+   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
+   "snippet": "",
+   "score": 7,
+   "source_id": "guardianenv",
+   "added": "2026-11-19"
+  },
   {
    "title": "Ancient height trends show technological advances did not always improve living standards",
    "source": "Phys.org (archaeology & fossils)",
@@ -27,54 +63,6 @@
    "added": "2026-11-17"
   },
   {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source": "Guardian Environment",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-17",
-   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
-   "snippet": "",
-   "score": 7,
-   "source_id": "guardianenv",
-   "added": "2026-11-19"
-  },
-  {
-   "title": "Mesopotamian Chronology Refined with Tree Rings and Ice Cores",
-   "source": "Archaeology Magazine (AIA)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-17",
-   "link": "https://archaeology.org/news/2026/11/17/mesopotamian-chronology-refined-with-tree-rings-and-ice-cores/",
-   "snippet": "",
-   "score": 7,
-   "source_id": "archaeology_mag",
-   "added": "2026-11-19"
-  },
-  {
-   "title": "Fossil of extinct giant bird discovered in Flores cave, Indonesia",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "arch",
-   "date": "2026-11-16",
-   "link": "https://news.mongabay.com/short-article/2026/11/fossil-of-extinct-giant-bird-discovered-in-flores-cave-indonesia/",
-   "snippet": "",
-   "score": 7,
-   "source_id": "mongabay",
-   "added": "2026-11-17"
-  },
-  {
-   "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
-   "source": "Nature (news)",
-   "tier": "Primary",
-   "group": "alt",
-   "date": "2026-11-16",
-   "link": "https://www.nature.com/articles/d41586-026-03763-z",
-   "snippet": "",
-   "score": 7,
-   "source_id": "nature",
-   "added": "2026-11-17"
-  },
-  {
    "title": "Dinosaurs may have been eating seaweed 100 million years ago",
    "source": "ScienceDaily (archaeology)",
    "tier": "Specialist",
@@ -87,16 +75,16 @@
    "added": "2026-11-15"
   },
   {
-   "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-12",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261112025529.htm",
+   "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-20",
+   "link": "https://news.mongabay.com/short-article/2026/11/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
    "snippet": "",
-   "score": 8,
-   "source_id": "sciencedaily_arch",
-   "added": "2026-11-15"
+   "score": 6,
+   "source_id": "mongabay",
+   "added": "2026-11-21"
   },
   {
    "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
@@ -109,18 +97,6 @@
    "score": 6,
    "source_id": "mongabay",
    "added": "2026-11-19"
-  },
-  {
-   "title": "Audit says Europe’s marine protected areas failing as 2030 deadline looms",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-11",
-   "link": "https://news.mongabay.com/2026/11/audit-says-europes-marine-protected-areas-failing-as-2030-deadline-looms/",
-   "snippet": "",
-   "score": 6,
-   "source_id": "mongabay",
-   "added": "2026-11-13"
   }
  ]
 }
