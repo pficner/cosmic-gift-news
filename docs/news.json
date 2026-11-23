@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T05:13:27+00:00",
- "count": 8,
+ "generated_at": "2026-11-23T05:35:00+00:00",
+ "count": 7,
  "items": [
   {
    "title": "A 3-million-year-old child just made human evolution far more complicated",
@@ -27,18 +27,6 @@
    "added": "2026-11-21"
   },
   {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source": "Guardian Environment",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-17",
-   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
-   "snippet": "",
-   "score": 7,
-   "source_id": "guardianenv",
-   "added": "2026-11-19"
-  },
-  {
    "title": "Ancient height trends show technological advances did not always improve living standards",
    "source": "Phys.org (archaeology & fossils)",
    "tier": "Specialist",
@@ -63,18 +51,6 @@
    "added": "2026-11-17"
   },
   {
-   "title": "Dinosaurs may have been eating seaweed 100 million years ago",
-   "source": "ScienceDaily (archaeology)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-15",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261112230502.htm",
-   "snippet": "",
-   "score": 8,
-   "source_id": "sciencedaily_arch",
-   "added": "2026-11-15"
-  },
-  {
    "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
    "source": "Mongabay",
    "tier": "Editorial",
@@ -85,6 +61,18 @@
    "score": 6,
    "source_id": "mongabay",
    "added": "2026-11-21"
+  },
+  {
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-17",
+   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
+   "snippet": "",
+   "score": 7,
+   "source_id": "guardianenv",
+   "added": "2026-11-19"
   },
   {
    "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
