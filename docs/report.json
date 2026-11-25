@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T05:35:00+00:00",
+ "generated_at": "2026-11-25T05:26:11+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -75,29 +75,56 @@
   }
  },
  "dropped": {
-  "no_topic_match": 313,
-  "marketing": 16,
-  "repeated": 13,
-  "conflict": 34,
-  "no_solution_signal": 47,
-  "explainer_not_news": 11,
+  "alarm": 21,
+  "no_topic_match": 323,
+  "no_solution_signal": 44,
+  "conflict": 31,
+  "explainer_not_news": 10,
+  "repeated": 12,
   "not_an_article": 1,
-  "alarm": 20,
-  "research_paper_not_news": 3,
+  "marketing": 15,
   "off_topic_or_product": 3,
   "fringe": 10,
   "hemp_out_of_scope": 1,
-  "near_duplicate": 1,
-  "carried_over_candidates": 8,
-  "below_threshold": 63
+  "near_duplicate": 2,
+  "carried_over_candidates": 7,
+  "below_threshold": 60
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
   {
+   "title": "The Six Biggest Takeaways From COP31, Which Ended Without an Agreement After Talks Broke Down",
+   "source_id": "smithsonian",
+   "group": "policy",
+   "score": 8,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Discovery of curse ritual in trash dump surprises Egyptologist: 'It must have been widespread in ancient Egypt'",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 1,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
+   "confirmed_by": []
+  },
+  {
    "title": "A 3-million-year-old child just made human evolution far more complicated",
    "source_id": "sciencedaily_arch",
    "group": "arch",
-   "score": 8,
+   "score": 7,
    "parts": {},
    "confirmed_by": []
   },
@@ -105,32 +132,22 @@
    "title": "This strange creature lived 309 million years ago, long before the dinosaurs",
    "source_id": "sciencedaily_arch",
    "group": "arch",
-   "score": 8,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "Ancient height trends show technological advances did not always improve living standards",
-   "source_id": "physorg_arch",
-   "group": "arch",
    "score": 7,
    "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
+   "title": "Coastal areas in England at risk of erosion to receive £11m in new funding",
    "source_id": "guardianenv",
    "group": "policy",
-   "score": 7,
-   "parts": {},
-   "confirmed_by": []
-  },
-  {
-   "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
-   "source_id": "mongabay",
-   "group": "policy",
    "score": 6,
-   "parts": {},
+   "parts": {
+    "evidence": 2,
+    "scale": 0,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 2
+   },
    "confirmed_by": []
   },
   {
@@ -138,6 +155,22 @@
    "source_id": "guardianenv",
    "group": "policy",
    "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
+   "source_id": "guardianenv",
+   "group": "policy",
+   "score": 6,
+   "parts": {},
+   "confirmed_by": []
+  },
+  {
+   "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 5,
    "parts": {},
    "confirmed_by": []
   },
@@ -152,8 +185,8 @@
  ],
  "counts": {
   "candidates": 535,
-  "after_filters": 63,
-  "eligible": 7,
-  "chosen": 7
+  "after_filters": 64,
+  "eligible": 9,
+  "chosen": 9
  }
 }

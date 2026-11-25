@@ -1,7 +1,31 @@
 {
- "generated_at": "2026-11-23T05:35:00+00:00",
- "count": 7,
+ "generated_at": "2026-11-25T05:26:11+00:00",
+ "count": 9,
  "items": [
+  {
+   "title": "The Six Biggest Takeaways From COP31, Which Ended Without an Agreement After Talks Broke Down",
+   "source": "Smithsonian Magazine",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-24",
+   "link": "https://www.smithsonianmag.com/science-nature/the-six-biggest-takeaways-from-cop31-which-ended-without-an-agreement-after-talks-broke-down-180989933/",
+   "snippet": "",
+   "score": 8,
+   "source_id": "smithsonian",
+   "added": "2026-11-25"
+  },
+  {
+   "title": "Discovery of curse ritual in trash dump surprises Egyptologist: 'It must have been widespread in ancient Egypt'",
+   "source": "Phys.org (archaeology & fossils)",
+   "tier": "Specialist",
+   "group": "arch",
+   "date": "2026-11-23",
+   "link": "https://phys.org/news/2026-11-discovery-curse-ritual-trash-dump.html",
+   "snippet": "",
+   "score": 7,
+   "source_id": "physorg_arch",
+   "added": "2026-11-25"
+  },
   {
    "title": "A 3-million-year-old child just made human evolution far more complicated",
    "source": "ScienceDaily (archaeology)",
@@ -27,16 +51,28 @@
    "added": "2026-11-21"
   },
   {
-   "title": "Ancient height trends show technological advances did not always improve living standards",
-   "source": "Phys.org (archaeology & fossils)",
-   "tier": "Specialist",
-   "group": "arch",
-   "date": "2026-11-16",
-   "link": "https://phys.org/news/2026-11-ancient-height-trends-technological-advances.html",
+   "title": "Coastal areas in England at risk of erosion to receive £11m in new funding",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-25",
+   "link": "https://www.theguardian.com/environment/2026/nov/25/coastal-areas-england-at-risk-erosion-11m-funding-drones-ea",
    "snippet": "",
-   "score": 8,
-   "source_id": "physorg_arch",
-   "added": "2026-11-17"
+   "score": 6,
+   "source_id": "guardianenv",
+   "added": "2026-11-25"
+  },
+  {
+   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-17",
+   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
+   "snippet": "",
+   "score": 7,
+   "source_id": "guardianenv",
+   "added": "2026-11-19"
   },
   {
    "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
@@ -61,18 +97,6 @@
    "score": 6,
    "source_id": "mongabay",
    "added": "2026-11-21"
-  },
-  {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source": "Guardian Environment",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-17",
-   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
-   "snippet": "",
-   "score": 7,
-   "source_id": "guardianenv",
-   "added": "2026-11-19"
   },
   {
    "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
