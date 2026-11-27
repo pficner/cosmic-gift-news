@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T05:26:11+00:00",
- "count": 9,
+ "generated_at": "2026-11-27T05:27:55+00:00",
+ "count": 10,
  "items": [
   {
    "title": "The Six Biggest Takeaways From COP31, Which Ended Without an Agreement After Talks Broke Down",
@@ -13,6 +13,42 @@
    "score": 8,
    "source_id": "smithsonian",
    "added": "2026-11-25"
+  },
+  {
+   "title": "Suit alleges Louisiana land deal between SpaceX and ExxonMobil violates open meetings law",
+   "source": "Guardian Environment",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-26",
+   "link": "https://www.theguardian.com/us-news/2026/nov/26/louisiana-spacex-exxonmobil-land-deal-lawsuit",
+   "snippet": "",
+   "score": 7,
+   "source_id": "guardianenv",
+   "added": "2026-11-27"
+  },
+  {
+   "title": "Indigenous Hunters Drove Bison Off This Tall Cliff for 3,000 Years. It's Only the Second Buffalo Jump Ever Discovered in Texas",
+   "source": "Smithsonian Magazine",
+   "tier": "Editorial",
+   "group": "arch",
+   "date": "2026-11-25",
+   "link": "https://www.smithsonianmag.com/smart-news/indigenous-hunters-drove-bison-off-a-cliff-for-3000-years-its-only-the-second-buffalo-jump-ever-discovered-in-texas-180989941/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "smithsonian",
+   "added": "2026-11-27"
+  },
+  {
+   "title": "Cargill publicly backs EU deforestation law while lobbying to weaken it, probe finds",
+   "source": "Mongabay",
+   "tier": "Editorial",
+   "group": "policy",
+   "date": "2026-11-25",
+   "link": "https://news.mongabay.com/2026/11/cargill-publicly-backs-eu-deforestation-law-while-lobbying-to-weaken-it-probe-finds/",
+   "snippet": "",
+   "score": 7,
+   "source_id": "mongabay",
+   "added": "2026-11-27"
   },
   {
    "title": "Discovery of curse ritual in trash dump surprises Egyptologist: 'It must have been widespread in ancient Egypt'",
@@ -63,18 +99,6 @@
    "added": "2026-11-25"
   },
   {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source": "Guardian Environment",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-17",
-   "link": "https://www.theguardian.com/environment/2026/nov/17/fossil-fuel-industry-colorado",
-   "snippet": "",
-   "score": 7,
-   "source_id": "guardianenv",
-   "added": "2026-11-19"
-  },
-  {
    "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
    "source": "Guardian Environment",
    "tier": "Editorial",
@@ -97,18 +121,6 @@
    "score": 6,
    "source_id": "mongabay",
    "added": "2026-11-21"
-  },
-  {
-   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
-   "source": "Mongabay",
-   "tier": "Editorial",
-   "group": "policy",
-   "date": "2026-11-18",
-   "link": "https://news.mongabay.com/short-article/2026/11/greenpeace-drops-attenboulder-to-deter-uk-bottom-trawlers-in-a-marine-protected-area/",
-   "snippet": "",
-   "score": 6,
-   "source_id": "mongabay",
-   "added": "2026-11-19"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T05:26:11+00:00",
+ "generated_at": "2026-11-27T05:27:55+00:00",
  "sources": {
   "mongabay": {
    "status": "ok",
@@ -75,20 +75,22 @@
   }
  },
  "dropped": {
-  "alarm": 21,
-  "no_topic_match": 323,
-  "no_solution_signal": 44,
-  "conflict": 31,
-  "explainer_not_news": 10,
-  "repeated": 12,
-  "not_an_article": 1,
-  "marketing": 15,
-  "off_topic_or_product": 3,
-  "fringe": 10,
+  "no_topic_match": 331,
+  "alarm": 19,
+  "not_an_article": 4,
+  "no_solution_signal": 45,
+  "conflict": 28,
+  "explainer_not_news": 7,
+  "repeated": 13,
+  "research_paper_not_news": 4,
+  "superlative": 1,
+  "marketing": 12,
+  "fringe": 8,
   "hemp_out_of_scope": 1,
+  "off_topic_or_product": 1,
   "near_duplicate": 2,
-  "carried_over_candidates": 7,
-  "below_threshold": 60
+  "carried_over_candidates": 9,
+  "below_threshold": 57
  },
  "note": "Selection is heuristic: it reads only title, summary, date and source.",
  "chosen": [
@@ -97,19 +99,13 @@
    "source_id": "smithsonian",
    "group": "policy",
    "score": 8,
-   "parts": {
-    "evidence": 2,
-    "scale": 2,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
+   "parts": {},
    "confirmed_by": []
   },
   {
-   "title": "Discovery of curse ritual in trash dump surprises Egyptologist: 'It must have been widespread in ancient Egypt'",
-   "source_id": "physorg_arch",
-   "group": "arch",
+   "title": "Suit alleges Louisiana land deal between SpaceX and ExxonMobil violates open meetings law",
+   "source_id": "guardianenv",
+   "group": "policy",
    "score": 7,
    "parts": {
     "evidence": 2,
@@ -118,6 +114,44 @@
     "confirmation": 0,
     "concreteness": 2
    },
+   "confirmed_by": []
+  },
+  {
+   "title": "Indigenous Hunters Drove Bison Off This Tall Cliff for 3,000 Years. It's Only the Second Buffalo Jump Ever Discovered in Texas",
+   "source_id": "smithsonian",
+   "group": "arch",
+   "score": 7,
+   "parts": {
+    "evidence": 0,
+    "scale": 1,
+    "recency": 2,
+    "confirmation": 2,
+    "concreteness": 2
+   },
+   "confirmed_by": [
+    "Archaeology Magazine (AIA)"
+   ]
+  },
+  {
+   "title": "Cargill publicly backs EU deforestation law while lobbying to weaken it, probe finds",
+   "source_id": "mongabay",
+   "group": "policy",
+   "score": 7,
+   "parts": {
+    "evidence": 2,
+    "scale": 2,
+    "recency": 2,
+    "confirmation": 0,
+    "concreteness": 1
+   },
+   "confirmed_by": []
+  },
+  {
+   "title": "Discovery of curse ritual in trash dump surprises Egyptologist: 'It must have been widespread in ancient Egypt'",
+   "source_id": "physorg_arch",
+   "group": "arch",
+   "score": 7,
+   "parts": {},
    "confirmed_by": []
   },
   {
@@ -141,20 +175,6 @@
    "source_id": "guardianenv",
    "group": "policy",
    "score": 6,
-   "parts": {
-    "evidence": 2,
-    "scale": 0,
-    "recency": 2,
-    "confirmation": 0,
-    "concreteness": 2
-   },
-   "confirmed_by": []
-  },
-  {
-   "title": "Fossil-fuel industry accused of violating Colorado law over not disclosing drilling chemicals",
-   "source_id": "guardianenv",
-   "group": "policy",
-   "score": 6,
    "parts": {},
    "confirmed_by": []
   },
@@ -173,20 +193,12 @@
    "score": 5,
    "parts": {},
    "confirmed_by": []
-  },
-  {
-   "title": "Greenpeace drops ‘Attenboulder’ to deter UK bottom trawlers in a marine protected area",
-   "source_id": "mongabay",
-   "group": "policy",
-   "score": 5,
-   "parts": {},
-   "confirmed_by": []
   }
  ],
  "counts": {
   "candidates": 535,
-  "after_filters": 64,
-  "eligible": 9,
-  "chosen": 9
+  "after_filters": 61,
+  "eligible": 11,
+  "chosen": 10
  }
 }
